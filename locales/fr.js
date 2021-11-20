@@ -2,4 +2,6 @@
  * LOCALES > FRENCH
  **************************************************************************/
 
-export default {}
+export default {
+  chatWithMe: 'Discutez avec moi',
+}

@@ -2,4 +2,6 @@
  * LOCALES > ENGLISH
  **************************************************************************/
 
-export default {}
+export default {
+  chatWithMe: 'Chat with me',
+}

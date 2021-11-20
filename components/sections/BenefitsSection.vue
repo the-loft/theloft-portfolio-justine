@@ -57,8 +57,8 @@
             </div>
           </div>
 
-          <base-button :icon="['fad', 'medal']" size="xl" full-width>
-            {{ $t('discoverOurPricing') }}
+          <base-button :icon="['far', 'comment-alt-smile']" size="xl" full-width>
+            {{ $t('chatWithMe') }}
           </base-button>
         </div>
 
