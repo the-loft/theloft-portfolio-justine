@@ -50,7 +50,7 @@
           <div
             v-for="banner in banners"
             :key="banner"
-            class="flex-initial p-3 mb-3 overflow-hidden bg-white border shadow-sm  last:mb-0 rounded-xl"
+            class="flex-initial p-3 mb-3 overflow-hidden bg-white border shadow-sm last:mb-0 rounded-xl"
           >
             <img
               :src="
@@ -163,7 +163,6 @@ export default {
       'fred',
       'laetitia',
       'michael',
-      'power',
       'thomas',
       'anthony',
       'celia',
@@ -174,6 +173,7 @@ export default {
       'steli',
       'timo',
       'yunae',
+      'power',
     ],
 
     covers: ['cover-outer', 'cover-inner', 'backcover'],
