@@ -16,6 +16,11 @@ module.exports = {
   ],
 
   theme: {
+    container: {
+      center: true,
+      padding: '1.5rem',
+    },
+
     extend: {
       borderColor: (theme) => ({
         DEFAULT: theme('colors.gray.300', 'currentColor'),
@@ -195,12 +200,12 @@ module.exports = {
         120: '30rem',
       },
     },
-  },
 
-  screens: {
-    sm: '640px',
-    md: '768px',
-    lg: '1024px',
-    xl: '1280px',
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
   },
 }

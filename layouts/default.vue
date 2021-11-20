@@ -4,16 +4,11 @@
 
 <template>
   <div
-    class="z-50 antialiased font-bold leading-relaxed tracking-tight text-gray-900  select-none safe-top safe-left safe-right safe-bottom default-layout"
+    class="z-50 antialiased leading-relaxed tracking-tight text-gray-900 select-none  has-animation default-layout"
   >
-    <div
-      class="max-w-screen-md px-4 pt-4 mx-auto sm:px-6 pb-10"
-    >
-
-        <nuxt />
-
-    </div>
-
+    <main class="container mt-10">
+      <nuxt />
+    </main>
   </div>
 </template>
 
@@ -22,11 +17,8 @@
      ************************************************************************* -->
 
 <script>
-
-
 export default {
   name: 'DefaultLayout',
-
 }
 </script>
 
@@ -53,7 +45,9 @@ a {
   @apply outline-none;
 
   &:focus {
-    @apply text-black;
+    &:not(.no-focus-style) {
+      @apply text-black;
+    }
   }
 }
 
@@ -64,9 +58,9 @@ img {
 .default-layout.has-animation {
   .page-enter-active,
   .page-leave-active {
+    transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
     transition-duration: 250ms;
-    transition-property: opacity, transform;
   }
 
   .page-enter {

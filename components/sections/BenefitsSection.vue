@@ -5,13 +5,8 @@
 <template>
   <home-section>
     <template #left>
-      <div :data-aos="!isMainSection ? 'zoom-in' : null">
-        <base-heading
-          :tag="isMainSection ? 'h1' : 'h2'"
-          alignment="center"
-          class="max-w-6xl mx-auto mb-1"
-          size="lg"
-        >
+      <div data-aos="zoom-in">
+        <base-heading alignment="center" class="max-w-6xl mx-auto mb-1" size="lg" tag="h2">
           <span class="flex flex-col">
             <span class="self-center mb-0.5">
               {{ titlePart1 ? titlePart1 : $t('title.part1') }}
@@ -66,38 +61,7 @@
             </div>
           </div>
 
-          <template v-if="isMainSection">
-            <base-button
-              v-if="!isSubscriptionActive"
-              :icon="['far', 'chevron-right']"
-              :to="{ name: 'product-pricing' }"
-              class="mb-3"
-              icon-position="right"
-              size="xl"
-              full-width
-            >
-              {{ $t('upgrade') }}
-            </base-button>
-
-            <base-button
-              :icon="['far', 'chevron-right']"
-              :reverse="!isSubscriptionActive"
-              :to="{ name: 'lists-directory' }"
-              icon-position="right"
-              size="xl"
-              full-width
-            >
-              {{ $t('accessYourLists') }}
-            </base-button>
-          </template>
-
-          <base-button
-            v-else-if="!isSubscriptionActive"
-            :icon="['fad', 'medal']"
-            :to="{ name: 'product-pricing' }"
-            size="xl"
-            full-width
-          >
+          <base-button :icon="['fad', 'medal']" size="xl" full-width>
             {{ $t('discoverOurPricing') }}
           </base-button>
         </div>
@@ -119,10 +83,6 @@
 <script>
 export default {
   props: {
-    isMainSection: {
-      type: Boolean,
-      default: false,
-    },
     titlePart1: {
       type: String,
       default: null,
