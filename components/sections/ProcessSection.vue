@@ -26,7 +26,17 @@
 
         <div class="relative h-4 xl:h-8">
           <div
-            class="hidden xl:block xl:absolute xl:top-5 xl:h-20 xl:w-0.5 xl:-translate-x-1/2 xl:bg-gray-400 xl:left-1/2"
+            class="
+              hidden
+              xl:block
+              xl:absolute
+              xl:top-5
+              xl:h-20
+              xl:w-0.5
+              xl:-translate-x-1/2
+              xl:bg-gray-400
+              xl:left-1/2
+            "
           ></div>
         </div>
       </div>
@@ -102,7 +112,7 @@
               <div
                 v-if="step.features && step.features.length > 0"
                 :class="{ 'xl:items-end': stepIndex % 2 === 1 && $mqXl }"
-                class="hidden lg:mt-4 lg:flex lg:items-center lg:justify-center xl:flex-col xl:mt-6 xl:items-start"
+                class="hidden  lg:mt-4 lg:flex lg:items-center lg:justify-center xl:flex-col xl:mt-6 xl:items-start"
               >
                 <feature-details
                   v-for="(feature, featureIndex) in step.features"
@@ -148,7 +158,17 @@
         </home-section>
 
         <div
-          class="hidden xl:block xl:absolute xl:top-0 xl:bottom-0 xl:w-0.5 xl:-translate-x-1/2 xl:bg-gray-400 xl:left-1/2"
+          class="
+            hidden
+            xl:block
+            xl:absolute
+            xl:top-0
+            xl:bottom-0
+            xl:w-0.5
+            xl:-translate-x-1/2
+            xl:bg-gray-400
+            xl:left-1/2
+          "
         ></div>
       </div>
     </template>
@@ -301,37 +321,6 @@ export default {
       "description": "Synchronize your lists of prospects and companies with the tools you already use.",
       "features": {
         "feature1": "New integrations every month"
-      }
-    }
-  },
-  "es": {
-    "title": {
-      "part1": "Descubre como funciona",
-      "part2": "en menos de 10 segundos"
-    },
-
-    "step1": {
-      "title": "Importa o segmenta",
-      "subtitle": "{count} millones de empresas",
-      "description": "Limite su búsqueda con miles de filtros para llegar a su perfil de empresa ideal."
-    },
-
-    "step2": {
-      "title": "Identificamos",
-      "subtitle": "prospectos para usted automáticamente",
-      "description": "CEOs, diseñadores o catadores de comida para perros. No importa a quién se dirija, se los conseguiremos.",
-      "features": {
-        "feature1": "Correos electrónicos comerciales verificados",
-        "feature2": "Filtrar por puestos de trabajo, país, etc."
-      }
-    },
-
-    "step3": {
-      "title": "Sincronizamos",
-      "subtitle": "con tus herramientas favoritas",
-      "description": "Sincronice sus listas de prospectos y empresas con las herramientas que ya utiliza.",
-      "features": {
-        "feature1": "Nuevas integraciones cada mes"
       }
     }
   },

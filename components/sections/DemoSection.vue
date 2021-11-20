@@ -6,12 +6,7 @@
   <home-section>
     <template #left>
       <div data-aos="zoom-in">
-        <base-heading
-          alignment="center"
-          size="lg"
-          tag="h2"
-          class="mb-6 sm:mb-8"
-        >
+        <base-heading alignment="center" size="lg" tag="h2" class="mb-6 sm:mb-8">
           <span class="flex flex-col">
             <span class="self-center">{{ $t('title.part1') }}</span>
 
@@ -34,7 +29,7 @@
         </div>
 
         <div
-          class="calendly-inline-widget calendly-widget relative z-10 w-full"
+          class="relative z-10 w-full calendly-inline-widget calendly-widget"
           data-url="https://calendly.com/prospectwith/30min?hide_landing_page_details=1&hide_gdpr_banner=1"
         ></div>
 
@@ -76,14 +71,6 @@ export default {
     "title": {
       "part1": "See our product in action with Julien",
       "part2": "the founder of ProspectWith"
-    }
-  },
-  "es": {
-    "legend": "Reserve una demostración de 15 minutos",
-
-    "title": {
-      "part1": "Vea nuestro producto en acción con Julien",
-      "part2": "el fundador de ProspectWith"
     }
   },
   "fr": {

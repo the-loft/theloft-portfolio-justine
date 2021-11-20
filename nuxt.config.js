@@ -45,7 +45,7 @@ export default {
     '@nuxtjs/svg',
   ],
 
-  modules: ['@nuxtjs/i18n', '@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', ['@nuxtjs/i18n', { vueI18nLoader: true }]],
 
   plugins: [
     // --> FOR SERVER AND CLIENT <--
