@@ -17,6 +17,14 @@
             </base-gradient>
           </span>
         </base-heading>
+
+        <base-button
+          :icon="['far', 'comment-alt-smile']"
+          size="xl"
+          @click="$helpers.common.triggerChatbox()"
+        >
+          {{ $t('chatWithMe') }}
+        </base-button>
       </div>
     </template>
 
