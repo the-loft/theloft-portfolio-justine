@@ -19,20 +19,7 @@
     }"
     class="relative block w-full text-center border-t"
     style="height: 1px"
-  >
-    <span
-      v-if="title"
-      :class="{
-        // --> BACKGROUNDS <--
-
-        'bg-gray-100': background === 'gray',
-        'bg-white': background === 'white',
-      }"
-      class="absolute inline-block px-4 -mt-3 text-sm font-bold tracking-wide text-center uppercase transform -translate-x-1/2 "
-    >
-      {{ title }}
-    </span>
-  </div>
+  ></div>
 </template>
 
 <!-- *************************************************************************
@@ -55,10 +42,6 @@ export default {
       validator(x) {
         return ['dashed', 'dotted', 'none', 'solid'].includes(x)
       },
-    },
-    title: {
-      type: String,
-      default: null,
     },
   },
 }

@@ -5,7 +5,7 @@
 <template>
   <base-section>
     <template #left>
-      <div data-aos="zoom-in">
+      <div>
         <base-heading alignment="center" size="lg" tag="h1" class="mb-6 sm:mb-8">
           <span class="flex flex-col">
             <span class="self-center mb-3">{{ $t('title.part1') }}</span>

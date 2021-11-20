@@ -8,7 +8,7 @@
       <!-- IDEA 1 -->
 
       <div class="mb-20">
-        <div class="mb-10">
+        <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
             {{ $t('idea1.title') }}
           </base-heading>
@@ -24,7 +24,7 @@
       <!-- IDEA 2 -->
 
       <div class="mb-20">
-        <div class="mb-10">
+        <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
             {{ $t('idea2.title') }}
           </base-heading>
@@ -49,7 +49,7 @@
       <!-- IDEA 3 -->
 
       <div class="mb-20">
-        <div class="mb-10">
+        <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
             {{ $t('idea3.title') }}
           </base-heading>
@@ -76,7 +76,7 @@
       <!-- IDEA 4 -->
 
       <div class="mb-20">
-        <div class="mb-10">
+        <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
             {{ $t('idea4.title') }}
           </base-heading>
@@ -107,7 +107,7 @@
       <!-- IDEA 5 -->
 
       <div>
-        <div class="mb-10">
+        <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
             {{ $t('idea5.title') }}
           </base-heading>

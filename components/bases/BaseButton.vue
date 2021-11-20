@@ -9,13 +9,10 @@
       // --> GENERAL <--
 
       'cursor-not-allowed': disabled,
-      'cursor-wait': loading,
-      'cursor-pointer': !loading,
       'w-full': fullWidth,
       'border background-transparent shadow-none': reverse,
       'shadow-sm': !reverse,
-      'hover:text-gray-900 hover:border-black':
-        reverse && !disabled && !loading && color !== 'white',
+      'hover:text-gray-900 hover:border-black': reverse && !disabled && color !== 'white',
 
       // --> CIRCULAR <--
 
@@ -29,44 +26,43 @@
       // --> COLORS <--
 
       'text-white bg-gray-900': color === 'black' && !reverse,
-      'hover:bg-black': color === 'black' && !reverse && !disabled && !loading,
+      'hover:bg-black': color === 'black' && !reverse && !disabled,
       'text-gray-900 border-gray-900': color === 'black' && reverse,
 
       'text-white bg-blue-700': color === 'blue' && !reverse,
-      'hover:bg-blue-600': color === 'blue' && !reverse && !disabled && !loading,
+      'hover:bg-blue-600': color === 'blue' && !reverse && !disabled,
       'text-blue-700 border-blue-700': color === 'blue' && reverse,
 
       'text-white bg-green-800': color === 'green' && !reverse,
-      'hover:bg-green-700': color === 'green' && !reverse && !disabled && !loading,
+      'hover:bg-green-700': color === 'green' && !reverse && !disabled,
       'text-green-700 border-green-700': color === 'green' && reverse,
 
       'text-white bg-indigo-700': color === 'indigo' && !reverse,
-      'hover:bg-indigo-600': color === 'indigo' && !reverse && !disabled && !loading,
+      'hover:bg-indigo-600': color === 'indigo' && !reverse && !disabled,
       'text-indigo-700 border-indigo-700': color === 'indigo' && reverse,
 
       'text-white bg-orange-700': color === 'orange' && !reverse,
-      'hover:bg-orange-600': color === 'orange' && !reverse && !disabled && !loading,
+      'hover:bg-orange-600': color === 'orange' && !reverse && !disabled,
       'text-orange-700 border-orange-700': color === 'orange' && reverse,
 
       'text-white bg-purple-700': color === 'purple' && !reverse,
-      'hover:bg-purple-600': color === 'purple' && !reverse && !disabled && !loading,
+      'hover:bg-purple-600': color === 'purple' && !reverse && !disabled,
       'text-purple-700 border-purple-700': color === 'purple' && reverse,
 
       'text-white bg-red-700': color === 'red' && !reverse,
-      'hover:bg-red-600': color === 'red' && !reverse && !disabled && !loading,
+      'hover:bg-red-600': color === 'red' && !reverse && !disabled,
       'text-red-700 border-red-700': color === 'red' && reverse,
 
       'text-white bg-teal-700': color === 'teal' && !reverse,
-      'hover:bg-teal-600': color === 'teal' && !reverse && !disabled && !loading,
+      'hover:bg-teal-600': color === 'teal' && !reverse && !disabled,
       'text-teal-700 border-teal-700': color === 'teal' && reverse,
 
       'text-gray-900 bg-white border border-gray-300': color === 'white' && !reverse,
-      'hover:border-gray-400 hover:bg-white':
-        color === 'white' && !reverse && !disabled && !loading,
+      'hover:border-gray-400 hover:bg-white': color === 'white' && !reverse && !disabled,
       'text-white border-white hover:text-gray-800 hover:bg-white': color === 'white' && reverse,
 
       'text-white bg-yellow-600': color === 'yellow' && !reverse,
-      'hover:bg-yellow-600': color === 'yellow' && !reverse && !disabled && !loading,
+      'hover:bg-yellow-600': color === 'yellow' && !reverse && !disabled,
       'text-yellow-600 border-yellow-600': color === 'yellow' && reverse,
 
       // --> FONT-SIZES <--
@@ -100,12 +96,12 @@
     :target="typeof to === 'string' ? 'blank' : null"
     :to="typeof to === 'object' ? to : null"
     :type="typeof to === 'object' ? null : type"
-    class="relative inline-block font-bold tracking-tight uppercase appearance-none select-none  focus:outline-none base-button"
+    class="relative inline-block font-bold tracking-tight uppercase appearance-none cursor-pointer select-none  focus:outline-none base-button"
     @click="onClick"
   >
-    <span :class="{ 'opacity-0': loading }" class="flex items-center justify-center h-full">
+    <span class="flex items-center justify-center h-full">
       <base-icon
-        v-if="icon && iconPosition === 'left' && !confirming"
+        v-if="icon"
         :class="{
           // --> COLORS <--
 
@@ -155,10 +151,6 @@ export default {
       type: Boolean,
       default: false,
     },
-    closeItemsOnClick: {
-      type: Boolean,
-      default: true,
-    },
     color: {
       type: String,
       default: 'black',
@@ -176,10 +168,6 @@ export default {
           'yellow',
         ].includes(x)
       },
-    },
-    confirmation: {
-      type: Boolean,
-      default: false,
     },
     disabled: {
       type: Boolean,
@@ -200,32 +188,11 @@ export default {
         return ['blue', 'gray', 'green', 'indigo', 'red', 'white', 'yellow'].includes(x)
       },
     },
-    iconPosition: {
-      type: String,
-      default: 'left',
-      validator(x) {
-        return ['left', 'right'].includes(x)
-      },
-    },
     id: {
       type: [String, Number],
       default: null,
     },
-    itemsMaxHeight: {
-      type: String,
-      default: 'sm',
-      validator(x) {
-        return ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', 'none'].includes(x)
-      },
-    },
-    itemsMulti: {
-      type: Boolean,
-      default: false,
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
+
     reverse: {
       type: Boolean,
       default: false,
@@ -255,82 +222,13 @@ export default {
         return ['button', 'reset', 'submit'].includes(x)
       },
     },
-    value: {
-      type: Array,
-      default: () => [],
-    },
-  },
-
-  data: () => ({
-    // --> STATE <--
-
-    confirming: false,
-  }),
-
-  computed: {
-    hasItems() {
-      return this.items.length || this.itemsActions.length
-    },
-
-    hasSlot() {
-      if (this.$slots.default && this.$slots.default[0]) {
-        const slotText = this.$slots.default[0].text || ''
-
-        return slotText.trim() !== ''
-      }
-
-      return false
-    },
-
-    selectedItems: {
-      get(value) {
-        return this.value
-      },
-
-      set(value) {
-        this.$emit('input', value)
-      },
-    },
   },
 
   methods: {
     // --> EVENT LISTENERS <--
 
-    onActionClick(action, event) {
-      this.$emit('action:click', action, event)
-    },
-
     onClick(event) {
-      if (!this.loading) {
-        if (this.confirmation) {
-          if (this.confirming) {
-            this.$emit('confirm', this.id, event)
-          } else {
-            // Reset confirmation after 3 seconds
-            setTimeout(() => (this.confirming = false), 3 * 1000)
-          }
-
-          this.confirming = !this.confirming
-        }
-
-        if (this.hasItems) {
-          this.itemsOpened = !this.itemsOpened
-
-          if (!this.itemsOpened) {
-            this.closeItems()
-          }
-        }
-
-        this.$emit('click', this.id, event)
-      }
-    },
-
-    onItemClick(item, action, event) {
-      if (this.closeItemsOnClick) {
-        this.closeItems()
-      }
-
-      this.$emit('item:click', item, this.id, action, event)
+      this.$emit('click', this.id, event)
     },
   },
 }
