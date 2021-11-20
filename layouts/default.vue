@@ -6,7 +6,7 @@
   <div
     class="z-50 antialiased leading-relaxed tracking-tight text-gray-900 select-none  has-animation default-layout"
   >
-    <main class="container mt-10">
+    <main class="container my-16">
       <nuxt />
     </main>
   </div>
