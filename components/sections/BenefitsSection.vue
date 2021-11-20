@@ -97,31 +97,31 @@ export default {
     benefits() {
       return [
         {
-          author: 'julien-le-coupanec',
+          author: 'lili',
           subtitle: this.$t('benefits.benefit1.subtitle'),
           title: this.$t('benefits.benefit1.title'),
           value: this.$t('benefits.benefit1.value'),
         },
         {
-          author: 'anthony-peron',
+          author: 'lili',
           subtitle: this.$t('benefits.benefit2.subtitle'),
           title: this.$t('benefits.benefit2.title'),
           value: this.$t('benefits.benefit2.value'),
         },
         {
-          author: 'nada-rifki',
+          author: 'lili',
           subtitle: this.$t('benefits.benefit3.subtitle'),
           title: this.$t('benefits.benefit3.title'),
           value: this.$t('benefits.benefit3.value'),
         },
         {
-          author: 'power',
+          author: 'lili',
           subtitle: this.$t('benefits.benefit4.subtitle'),
           title: this.$t('benefits.benefit4.title'),
           value: this.$t('benefits.benefit4.value'),
         },
         {
-          author: 'yoda',
+          author: 'lili',
           subtitle: this.$t('benefits.benefit5.subtitle'),
           title: this.$t('benefits.benefit5.title'),
           value: this.$t('benefits.benefit5.value'),

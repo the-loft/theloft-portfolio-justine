@@ -48,23 +48,11 @@
 
 <script>
 // Components
-import AnthonyPeron from '@/assets/images/components/bases/BaseQuote/anthony-peron.svg?inline'
-import BriceMaurin from '@/assets/images/components/bases/BaseQuote/brice-maurin.svg?inline'
-import DenisCohen from '@/assets/images/components/bases/BaseQuote/denis-cohen.svg?inline'
-import JulienLeCoupanec from '@/assets/images/components/bases/BaseQuote/julien-le-coupanec.svg?inline'
-import NadaRifki from '@/assets/images/components/bases/BaseQuote/nada-rifki.svg?inline'
-import Power from '@/assets/images/components/bases/BaseQuote/power.svg?inline'
-import Yoda from '@/assets/images/components/bases/BaseQuote/yoda.svg?inline'
+import Lili from '@/assets/images/components/bases/BaseQuote/lili.svg?inline'
 
 export default {
   components: {
-    AnthonyPeron,
-    BriceMaurin,
-    DenisCohen,
-    JulienLeCoupanec,
-    NadaRifki,
-    Power,
-    Yoda,
+    Lili,
   },
 
   props: {
@@ -72,17 +60,7 @@ export default {
       type: String,
       required: true,
       validator(x) {
-        return [
-          'anthony-peron',
-          'brice-maurin',
-          'dharmesh-shah',
-          'denis-cohen',
-          'julien-le-coupanec',
-          'nada-rifki',
-          'power',
-          'timo-rein',
-          'yoda',
-        ].includes(x)
+        return ['lili'].includes(x)
       },
     },
     background: {
