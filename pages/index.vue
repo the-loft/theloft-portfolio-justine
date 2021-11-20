@@ -4,6 +4,10 @@
 
 <template>
   <div>
+    <main-section />
+
+    <base-divider class="my-10 sm:my-16" />
+
     <ideas-section class="-mt-2" />
 
     <base-divider class="my-10 sm:my-16" />

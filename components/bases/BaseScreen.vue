@@ -23,7 +23,7 @@
         'p-4 rounded-5xl': size === 'sm',
         'p-6 rounded-7xl': size === 'base',
       }"
-      class="relative w-full h-full overflow-hidden bg-gray-100 border border-gray-200 min-h-xs rounded-3xls"
+      class="relative w-full h-full overflow-hidden bg-gray-100 border border-gray-200  min-h-xs rounded-3xl"
     >
       <img
         v-if="thumbnail"
