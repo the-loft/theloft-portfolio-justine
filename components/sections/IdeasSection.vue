@@ -9,7 +9,7 @@
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea1.title') }}
           </base-heading>
 
@@ -25,7 +25,7 @@
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea2.title') }}
           </base-heading>
 
@@ -50,7 +50,7 @@
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea3.title') }}
           </base-heading>
 
@@ -77,7 +77,7 @@
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea4.title') }}
           </base-heading>
 
@@ -108,7 +108,7 @@
 
       <div>
         <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h3">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea5.title') }}
           </base-heading>
 
