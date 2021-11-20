@@ -6,7 +6,7 @@
   <home-section>
     <template #left>
       <div data-aos="zoom-in">
-        <base-heading alignment="center" size="xl" class="mb-6 sm:mb-8" tag="h2">
+        <base-heading alignment="center" size="lg" class="mb-6 sm:mb-8" tag="h2">
           <span class="flex flex-col">
             <span class="self-center">{{ $t('title.part1') }}</span>
 
@@ -15,14 +15,6 @@
             </base-gradient>
           </span>
         </base-heading>
-
-        <base-button
-          :icon="['far', 'calendar-alt']"
-          :size="$mqSm ? 'xl' : 'lg'"
-          @click="$helpers.common.bookDemo"
-        >
-          {{ $t('bookDemo') }}
-        </base-button>
 
         <div class="relative h-4 xl:h-8">
           <div
@@ -66,7 +58,6 @@
               <base-heading
                 :alignment="$mqXl ? (stepIndex % 2 === 0 ? 'left' : 'right') : 'center'"
                 class="mb-1 xl:-mt-4"
-                size="lg"
                 tag="h2"
               >
                 <div
@@ -89,59 +80,18 @@
 
               <base-heading
                 :alignment="$mqXl ? (stepIndex % 2 === 0 ? 'left' : 'right') : 'center'"
-                class="mb-2 xl:mb-4"
-                size="lg"
                 tag="h3"
               >
                 <base-gradient :color="step.color">
-                  {{
-                    $t(`step${stepIndex + 1}.subtitle`, {
-                      count: Math.ceil(companiesCount / (1 * 1000 * 1000)),
-                    })
-                  }}
+                  {{ $t(`step${stepIndex + 1}.subtitle`) }}
                 </base-gradient>
               </base-heading>
-
-              <base-paragraph
-                :alignment="$mqXl ? (stepIndex % 2 === 0 ? 'left' : 'right') : 'center'"
-                size="lg"
-              >
-                {{ $t(`step${stepIndex + 1}.description`) }}
-              </base-paragraph>
-
-              <div
-                v-if="step.features && step.features.length > 0"
-                :class="{ 'xl:items-end': stepIndex % 2 === 1 && $mqXl }"
-                class="hidden  lg:mt-4 lg:flex lg:items-center lg:justify-center xl:flex-col xl:mt-6 xl:items-start"
-              >
-                <feature-details
-                  v-for="(feature, featureIndex) in step.features"
-                  :key="featureIndex"
-                  :icon="feature.icon"
-                  :label="feature.label"
-                  class="flex-initial mr-8 font-medium last:mr-0 xl:mr-0 xl:mb-3 xl:last:mb-0"
-                  size="xl"
-                />
-              </div>
-
-              <div
-                :class="{
-                  // --> GENERAL <--
-
-                  'xl:text-left': stepIndex % 2 === 0,
-                  'xl:text-right': stepIndex % 2 === 1,
-                }"
-              >
-                <base-link v-if="step.link" :to="step.link.to" class="mt-4 xl:mt-5" size="xl">
-                  {{ step.link.label }}
-                </base-link>
-              </div>
             </div>
           </template>
 
           <template #right>
             <div class="relative xl:w-152">
-              <screen-preview
+              <base-screen
                 :class="{
                   // --> GENERAL <--
 
@@ -150,7 +100,6 @@
                 }"
                 :thumbnail="step.thumbnail"
                 :power="step.power"
-                :video="step.video"
                 class="relative z-10 max-w-xl mx-auto mt-10 xl:mt-0"
               />
             </div>
@@ -180,109 +129,33 @@
      ************************************************************************* -->
 
 <script>
-// NPM
-import { mapGetters } from 'vuex'
-
 export default {
   computed: {
     steps() {
       return [
         {
           color: 'red',
-          power: 'explorer',
-          features: [
-            {
-              icon: this.$helpers.icon.getIconForModel('industry', 'far'),
-              label:
-                this.$filters.numeralRounded(this.industriesCount, true) +
-                ' ' +
-                this.$tc('industry', this.industriesCount),
-            },
-            {
-              icon: this.$helpers.icon.getIconForModel('country', 'far'),
-              label:
-                this.$filters.numeralRounded(this.locationsCount, true) +
-                ' ' +
-                this.$tc('location', this.locationsCount),
-            },
-            {
-              icon: this.$helpers.icon.getIconForModel('technology', 'far'),
-              label:
-                this.$filters.numeralRounded(this.technologiesCount, true) +
-                ' ' +
-                this.$tc('technology', this.technologiesCount),
-            },
-          ],
-          link: {
-            label: this.$t('browseCompanies'),
-            to: {
-              name: 'companies-search',
-            },
-          },
-          video: {
-            autoplay: true,
-            loop: true,
-            muted: true,
-            source: '/videos/2020-09-15-companies-directory',
+          power: 'file',
+          thumbnail: {
+            src: require('~/assets/images/components/sections/ProcessSection/step1.jpg'),
           },
         },
         {
           color: 'orange',
           power: 'file',
-          features: [
-            {
-              icon: this.$helpers.icon.getIconForAttribute('email', 'far'),
-              label: this.$t('step2.features.feature1'),
-            },
-            {
-              icon: this.$helpers.icon.getIconForAttribute('jobTitle', 'far'),
-              label: this.$t('step2.features.feature2'),
-            },
-          ],
-          link: {
-            label: this.$t('boostYourProspection'),
-            to: {
-              name: 'auth-register',
-            },
-          },
-          video: {
-            autoplay: true,
-            loop: true,
-            muted: true,
-            source: '/videos/2021-01-05-decision-makers',
+          thumbnail: {
+            src: require('~/assets/images/components/sections/ProcessSection/step2.jpg'),
           },
         },
         {
-          color: 'pink',
-          power: 'king',
-          features: [
-            {
-              icon: this.$helpers.icon.getIconForModel('integration', 'far'),
-              label: this.$t('step3.features.feature1'),
-            },
-          ],
-          link: {
-            label: this.$t('browseIntegrations'),
-            to: {
-              name: 'integrations-directory',
-            },
-          },
-          video: {
-            autoplay: true,
-            loop: true,
-            muted: true,
-            source: '/videos/2021-06-05-integrations-directory',
+          color: 'green',
+          power: 'file',
+          thumbnail: {
+            src: require('~/assets/images/components/sections/ProcessSection/step3.jpg'),
           },
         },
       ]
     },
-
-    ...mapGetters({
-      companiesCount: 'Platform/companiesCount',
-      industriesCount: 'Platform/industriesCount',
-      locationsCount: 'Platform/locationsCount',
-      technologiesCount: 'Platform/technologiesCount',
-    }),
   },
 }
 </script>
@@ -295,64 +168,44 @@ export default {
 {
   "en": {
     "title": {
-      "part1": "Discover how it works",
-      "part2": "in less than 10 seconds"
+      "part1": "Discover my work process",
+      "part2": "in less than 1 minute"
     },
 
     "step1": {
-      "title": "Import or segment",
-      "subtitle": "{count} million companies",
-      "description": "Narrow down your search with thousands of filters in order to hit your ideal company profile."
+      "title": "I sketch my ideas on paper",
+      "subtitle": "& I send you a Red Pen link to collect all your feedback"
     },
 
     "step2": {
-      "title": "We identify",
-      "subtitle": "the prospects for you automatically",
-      "description": "CEOs, designers or dog food tasters. No matter who you target, we’ll get them for you.",
-      "features": {
-        "feature1": "Verified business emails",
-        "feature2": "Filter by job titles, country etc."
-      }
+      "title": "I design on Illustrator",
+      "subtitle": "& I get back to you with another Red Pen link to apply all your adjustments"
     },
 
     "step3": {
-      "title": "We synchronize",
-      "subtitle": "with your favorite tools",
-      "description": "Synchronize your lists of prospects and companies with the tools you already use.",
-      "features": {
-        "feature1": "New integrations every month"
-      }
+      "title": "I animate with AE & Lottie",
+      "subtitle": "& I give you a LottieFiles link so we can improve each detail"
     }
   },
   "fr": {
     "title": {
-      "part1": "Découvrez comment cela fonctionne",
-      "part2": "en moins de 10 secondes"
+      "part1": "Découvrez ma méthode de travail",
+      "part2": "en moins de 1 minute"
     },
 
     "step1": {
-      "title": "Importez ou ciblez",
-      "subtitle": "{count} millions d'entreprises",
-      "description": "Affinez votre recherche avec des milliers de filtres afin d'atteindre votre profil d'entreprise idéal."
+      "title": "Je dessine mes idées sur papier",
+      "subtitle": "& je vous envoie un lien Red Pen pour collecter tout votre feedback"
     },
 
     "step2": {
-      "title": "Nous identifions",
-      "subtitle": "les prospects automatiquement",
-      "description": "PDG, designers ou dégustateurs de nourriture pour chiens. Peu importe qui vous ciblez, nous les trouverons pour vous.",
-      "features": {
-        "feature1": "E-mails professionnels vérifiés",
-        "feature2": "Filtrer par intitulés de poste, pays, etc."
-      }
+      "title": "Je conçois sur Illustrator",
+      "subtitle": "& je reviens vers vous avec un lien Red Pen pour appliquer tous vos ajustements"
     },
 
     "step3": {
-      "title": "Nous synchronisons",
-      "subtitle": "avec vos outils préférés",
-      "description": "Synchronisez vos listes de prospects et d'entreprises avec les outils que vous utilisez déjà.",
-      "features": {
-        "feature1": "De nouvelles intégrations chaque mois"
-      }
+      "title": "J'anime avec AE & Lottie",
+      "subtitle": "& je vous donne un lien LottieFiles afin que nous puissions améliorer chaque détail"
     }
   }
 }

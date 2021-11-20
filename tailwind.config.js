@@ -26,6 +26,17 @@ module.exports = {
         DEFAULT: theme('colors.gray.300', 'currentColor'),
       }),
 
+      borderRadius: {
+        xl: '0.625rem',
+        '2xl': '0.75rem',
+        '3xl': '0.875rem',
+        '4xl': '1rem',
+        '5xl': '1.25rem',
+        '6xl': '1.5rem',
+        '7xl': '1.75rem',
+        '8xl': '2rem',
+      },
+
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -198,6 +209,7 @@ module.exports = {
         104: '26rem',
         112: '28rem',
         120: '30rem',
+        152: '38rem',
       },
     },
 

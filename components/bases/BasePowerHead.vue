@@ -3,10 +3,7 @@
      ************************************************************************* -->
 
 <template>
-  <div
-    :style="{ marginTop, width }"
-    class="absolute top-0 left-0 transform -translate-x-1/2 left-1/2"
-  >
+  <div :style="{ marginTop, width }" class="absolute top-0 transform -translate-x-1/2 left-1/2">
     <component :is="`Power${$helpers.string.capitalize(power)}`" v-if="!animationLoaded" />
 
     <div
@@ -14,7 +11,6 @@
       :class="{
         // --> MARGINS <--
 
-        '-mt-2': ['explorer', 'king'].includes(power),
         '-mt-0.25': ['file'].includes(power),
       }"
       class="js-power"
@@ -31,19 +27,11 @@
 import lottie from 'lottie-web'
 
 // Components
-import PowerBook from '@/assets/images/components/bases/BasePowerHead/power-book.svg?inline'
-import PowerCap from '@/assets/images/components/bases/BasePowerHead/power-cap.svg?inline'
-import PowerExplorer from '@/assets/images/components/bases/BasePowerHead/power-explorer.svg?inline'
 import PowerFile from '@/assets/images/components/bases/BasePowerHead/power-file.svg?inline'
-import PowerKing from '@/assets/images/components/bases/BasePowerHead/power-king.svg?inline'
 
 export default {
   components: {
-    PowerBook,
-    PowerCap,
-    PowerExplorer,
     PowerFile,
-    PowerKing,
   },
 
   props: {
@@ -106,6 +94,8 @@ export default {
   },
 
   mounted() {
+    console.log(`/animations/components/bases/BasePowerHead/power-${this.power}.json`)
+
     lottie.loadAnimation({
       container: this.$el.querySelector('.js-power'),
       renderer: 'svg',

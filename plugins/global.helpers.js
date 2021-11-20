@@ -3,6 +3,7 @@
  **************************************************************************/
 
 // Helpers
+import StringHelpers from '@/helpers/string'
 import UtilityHelpers from '@/helpers/utility'
 
 /**************************************************************************
@@ -12,6 +13,7 @@ import UtilityHelpers from '@/helpers/utility'
 export default (context, inject) => {
   // Initialize helpers
   const helpers = {
+    string: StringHelpers,
     utility: UtilityHelpers,
   }
 

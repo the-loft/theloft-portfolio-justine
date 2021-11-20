@@ -21,7 +21,8 @@
     "@nuxtjs/svg": "0.3.0",
     "core-js": "3.15.1",
     "lottie-web": "5.8.1",
-    "nuxt": "2.15.7"
+    "nuxt": "2.15.7",
+    "nuxt-mq": "2.0.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.14.7",

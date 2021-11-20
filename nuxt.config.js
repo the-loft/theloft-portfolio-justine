@@ -19,7 +19,7 @@ export default {
     },
   },
 
-  components: ['~/components/bases', '~/components/common', '~/components/sections'],
+  components: ['~/components/bases', '~/components/sections'],
 
   target: 'static',
 
@@ -40,13 +40,31 @@ export default {
 
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/svg'],
 
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', ['@nuxtjs/i18n', { vueI18nLoader: true }]],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    ['@nuxtjs/i18n', { vueI18nLoader: true }],
+    [
+      'nuxt-mq',
+      {
+        defaultBreakpoint: 'xl',
+        breakpoints: {
+          xs: 640,
+          sm: 768,
+          md: 1024,
+          lg: 1280,
+          xl: Infinity,
+        },
+      },
+    ],
+  ],
 
   plugins: [
     // --> FOR SERVER AND CLIENT <--
 
     { src: '@/plugins/global.fontawesome' },
     { src: '@/plugins/global.helpers' },
+    { src: '@/plugins/global.mixin' },
 
     // --> FOR CLIENT ONLY <--
   ],

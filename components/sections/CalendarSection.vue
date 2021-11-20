@@ -10,7 +10,7 @@
           <span class="flex flex-col">
             <span class="self-center">{{ $t('title.part1') }}</span>
 
-            <base-gradient class="self-center" color="pink">
+            <base-gradient class="self-center" color="green">
               {{ $t('title.part2') }}
             </base-gradient>
           </span>
