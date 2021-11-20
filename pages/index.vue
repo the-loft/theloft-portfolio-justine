@@ -4,7 +4,11 @@
 
 <template>
   <div>
-    <process-section />
+    <ideas-section class="-mt-2" />
+
+    <base-divider class="my-10 sm:my-16" />
+
+    <process-section class="-mt-2" />
 
     <base-divider class="my-10 sm:my-16" />
 

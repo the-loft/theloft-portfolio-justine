@@ -94,8 +94,6 @@ export default {
   },
 
   mounted() {
-    console.log(`/animations/components/bases/BasePowerHead/power-${this.power}.json`)
-
     lottie.loadAnimation({
       container: this.$el.querySelector('.js-power'),
       renderer: 'svg',
