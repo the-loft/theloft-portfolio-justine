@@ -67,6 +67,8 @@ export default {
     { src: '@/plugins/global.mixin' },
 
     // --> FOR CLIENT ONLY <--
+
+    { src: '@/plugins/client.crisp', mode: 'client' },
   ],
 
   styleResources: {

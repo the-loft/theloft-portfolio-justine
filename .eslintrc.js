@@ -10,6 +10,9 @@ module.exports = {
   },
   extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
   plugins: [],
+  globals: {
+    $crisp: true,
+  },
   rules: {
     'vue/no-v-html': 'off',
   },

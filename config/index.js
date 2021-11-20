@@ -21,4 +21,10 @@ export default merge(envConf, {
   app: {
     version: process.env.npm_package_version,
   },
+
+  services: {
+    crisp: {
+      websiteId: 'c44035f3-b8b0-4819-b151-156946c7e8d6',
+    },
+  },
 })

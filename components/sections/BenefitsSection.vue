@@ -32,16 +32,7 @@
           <slot />
 
           <div
-            class="
-              p-10
-              mb-4
-              text-gray-900
-              bg-white
-              border border-gray-400
-              rounded-md
-              shadow-sm
-              min-h-md
-            "
+            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm  min-h-md"
           >
             <div
               v-for="(benefit, benefitIndex) of benefits"
@@ -66,7 +57,12 @@
             </div>
           </div>
 
-          <base-button :icon="['far', 'comment-alt-smile']" size="xl" full-width>
+          <base-button
+            :icon="['far', 'comment-alt-smile']"
+            size="xl"
+            full-width
+            @click="$helpers.common.triggerChatbox()"
+          >
             {{ $t('chatWithMe') }}
           </base-button>
         </div>
