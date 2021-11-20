@@ -3,7 +3,7 @@
      ************************************************************************* -->
 
 <template>
-  <home-section>
+  <base-section>
     <template #left>
       <div data-aos="zoom-in">
         <base-heading alignment="center" class="max-w-6xl mx-auto mb-1" size="lg" tag="h2">
@@ -32,7 +32,16 @@
           <slot />
 
           <div
-            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm  min-h-md"
+            class="
+              p-10
+              mb-4
+              text-gray-900
+              bg-white
+              border border-gray-400
+              rounded-md
+              shadow-sm
+              min-h-md
+            "
           >
             <div
               v-for="(benefit, benefitIndex) of benefits"
@@ -69,7 +78,7 @@
         />
       </div>
     </template>
-  </home-section>
+  </base-section>
 </template>
 
 <!-- *************************************************************************

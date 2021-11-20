@@ -14,6 +14,7 @@
     class="flex flex-col"
   >
     <div
+      v-if="$slots.left"
       :class="{
         // --> DIRECTIONS <--
 

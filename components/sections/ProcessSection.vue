@@ -3,7 +3,7 @@
      ************************************************************************* -->
 
 <template>
-  <home-section>
+  <base-section>
     <template #left>
       <div data-aos="zoom-in">
         <base-heading alignment="center" size="lg" class="mb-6 sm:mb-8" tag="h2">
@@ -36,7 +36,7 @@
 
     <template #right>
       <div class="relative">
-        <home-section
+        <base-section
           v-for="(step, stepIndex) in steps"
           :key="stepIndex"
           :class="{ 'mb-16': stepIndex + 1 !== steps.length }"
@@ -104,7 +104,7 @@
               />
             </div>
           </template>
-        </home-section>
+        </base-section>
 
         <div
           class="
@@ -121,7 +121,7 @@
         ></div>
       </div>
     </template>
-  </home-section>
+  </base-section>
 </template>
 
 <!-- *************************************************************************

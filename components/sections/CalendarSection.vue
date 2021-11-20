@@ -3,7 +3,7 @@
      ************************************************************************* -->
 
 <template>
-  <home-section>
+  <base-section>
     <template #left>
       <div data-aos="zoom-in">
         <base-heading alignment="center" size="lg" tag="h2" class="mb-6 sm:mb-8">
@@ -42,7 +42,7 @@
         </div>
       </div>
     </template>
-  </home-section>
+  </base-section>
 </template>
 
 <!-- *************************************************************************
