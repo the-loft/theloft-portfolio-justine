@@ -15,7 +15,9 @@ export default {
 
   build: {
     babel: {
-      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+      plugins: [
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
+      ],
     },
   },
 
