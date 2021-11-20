@@ -116,10 +116,10 @@
 
           // --> MARGIN <--
 
-          'mr-1.5': size === '2xs' && hasSlot,
-          'mr-2': ['xs', 'sm', 'base'].includes(size) && hasSlot,
-          'mr-2.5': ['md', 'lg'].includes(size) && hasSlot,
-          'mr-3': size === 'xl' && hasSlot,
+          'mr-1.5': size === '2xs',
+          'mr-2': ['xs', 'sm', 'base'].includes(size),
+          'mr-2.5': ['md', 'lg'].includes(size),
+          'mr-3': size === 'xl',
 
           // --> WIDTH <--
 
