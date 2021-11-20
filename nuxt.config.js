@@ -38,24 +38,25 @@ export default {
 
   // --> MODULES, PLUGINS AND STYLESHEETS <--
 
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/svg'],
 
-  modules: ['@nuxtjs/pwa', ['@nuxtjs/i18n', { vueI18nLoader: true }]],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', ['@nuxtjs/i18n', { vueI18nLoader: true }]],
 
   plugins: [
     // --> FOR SERVER AND CLIENT <--
 
     { src: '@/plugins/global.fontawesome' },
+    { src: '@/plugins/global.helpers' },
 
     // --> FOR CLIENT ONLY <--
   ],
 
-  css: [],
+  styleResources: {
+    scss: [
+      // Site-wide mixins and functions
+      '@/assets/stylesheets/tools/mq.scss',
+    ],
+  },
 
   // --> MODULES CONFIGURATION <--
 

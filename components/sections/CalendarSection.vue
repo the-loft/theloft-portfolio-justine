@@ -30,7 +30,7 @@
 
         <div
           class="relative z-10 w-full calendly-inline-widget calendly-widget"
-          data-url="https://calendly.com/prospectwith/30min?hide_landing_page_details=1&hide_gdpr_banner=1"
+          data-url="https://calendly.com/justine-lecoupanec/30min?hide_landing_page_details=1&hide_gdpr_banner=1"
         ></div>
 
         <div class="absolute top-0 right-0 hidden mt-40 xl:block">
@@ -66,20 +66,36 @@ export default {
 <i18n lang="json">
 {
   "en": {
-    "legend": "Book a 15-minute demo",
-
     "title": {
-      "part1": "See our product in action with Julien",
-      "part2": "the founder of ProspectWith"
+      "part1": "Book a 15-minute call with me",
+      "part2": "Let's improve your product's identity together"
     }
   },
   "fr": {
-    "legend": "Réservez une démo de 15 minutes",
-
     "title": {
-      "part1": "Découvrez notre produit en action avec Julien",
-      "part2": "le fondateur de ProspectWith"
+      "part1": "Réservez une appel de 15 minutes avec moi",
+      "part2": "Améliorons ensemble l'identité de votre produit"
     }
   }
 }
 </i18n>
+
+<!-- *************************************************************************
+     STYLE
+     ************************************************************************* -->
+
+<style lang="scss">
+$c: '.calendly-widget';
+
+#{$c} {
+  height: 600px;
+
+  @include mq($from: md) {
+    height: 970px;
+  }
+
+  @include mq($from: xl) {
+    height: 670px;
+  }
+}
+</style>

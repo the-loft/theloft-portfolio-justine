@@ -5,6 +5,10 @@
 <template>
   <div>
     <benefits-section />
+
+    <base-divider class="my-10 sm:my-16" />
+
+    <calendar-section />
   </div>
 </template>
 
