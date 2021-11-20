@@ -48,10 +48,12 @@
 
 <script>
 // Components
+import Justine from '@/assets/images/components/bases/BaseQuote/justine.svg?inline'
 import Lili from '@/assets/images/components/bases/BaseQuote/lili.svg?inline'
 
 export default {
   components: {
+    Justine,
     Lili,
   },
 
@@ -60,7 +62,7 @@ export default {
       type: String,
       required: true,
       validator(x) {
-        return ['lili'].includes(x)
+        return ['justine', 'lili'].includes(x)
       },
     },
     background: {
