@@ -4,7 +4,6 @@
 
 <template>
   <span
-    v-click-outside="onClickOutside"
     :class="{ relative: menuItems }"
     class="select-none"
     @click="onClick"
@@ -129,12 +128,6 @@ export default {
       }
 
       this.$emit('click', event)
-    },
-
-    onClickOutside() {
-      if (this.menuItems) {
-        this.menuOpened = false
-      }
     },
 
     onMenuItemClick(item, subItem, event) {

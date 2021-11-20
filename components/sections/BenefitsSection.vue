@@ -37,7 +37,7 @@
           <slot />
 
           <div
-            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm min-h-md"
+            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm  min-h-md"
           >
             <div
               v-for="(benefit, benefitIndex) of benefits"
@@ -52,7 +52,7 @@
                 {{ benefit.subtitle }}
               </base-paragraph>
 
-              <playbook-quote
+              <base-quote
                 :author="benefit.author"
                 :has-author-info="false"
                 :margin="0"
@@ -60,7 +60,7 @@
                 background="gray"
               >
                 {{ benefit.value }}
-              </playbook-quote>
+              </base-quote>
 
               <base-divider v-if="benefitIndex + 1 !== benefits.length" class="my-8" />
             </div>

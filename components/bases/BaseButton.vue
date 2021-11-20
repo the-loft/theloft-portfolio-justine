@@ -5,7 +5,6 @@
 <template>
   <component
     :is="!to ? 'button' : typeof to === 'string' ? 'a' : 'nuxt-link'"
-    v-click-outside="onClickOutside"
     :class="{
       // --> GENERAL <--
 
@@ -101,7 +100,7 @@
     :target="typeof to === 'string' ? 'blank' : null"
     :to="typeof to === 'object' ? to : null"
     :type="typeof to === 'object' ? null : type"
-    class="relative inline-block font-bold tracking-tight uppercase appearance-none select-none focus:outline-none base-button"
+    class="relative inline-block font-bold tracking-tight uppercase appearance-none select-none  focus:outline-none base-button"
     @click="onClick"
   >
     <span :class="{ 'opacity-0': loading }" class="flex items-center justify-center h-full">
@@ -142,8 +141,6 @@
         <slot />
       </span>
     </span>
-
-
   </component>
 </template>
 
@@ -152,12 +149,7 @@
      ************************************************************************* -->
 
 <script>
-// Mixins
-import ItemsSelectorMixin from '@/mixins/common/ItemsSelectorMixin'
-
 export default {
-  mixins: [ItemsSelectorMixin],
-
   props: {
     circular: {
       type: Boolean,
@@ -330,14 +322,6 @@ export default {
         }
 
         this.$emit('click', this.id, event)
-      }
-    },
-
-    onClickOutside() {
-      if (this.confirming) {
-        this.confirming = false
-      } else if (this.hasItems) {
-        this.closeItems()
       }
     },
 

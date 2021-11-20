@@ -19,7 +19,7 @@ export default {
     },
   },
 
-  components: true,
+  components: ['~/components/bases', '~/components/common', '~/components/sections'],
 
   target: 'static',
 
@@ -38,7 +38,12 @@ export default {
 
   // --> MODULES, PLUGINS AND STYLESHEETS <--
 
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/tailwindcss'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg',
+  ],
 
   modules: ['@nuxtjs/i18n', '@nuxtjs/pwa'],
 

@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#edf2f7"/>
+  <g clip-path="url(#clip0)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M171.236 99.9916C171.236 73.1755 149.464 51.4038 122.648 51.4038H77.4786C50.6624 51.4038 28.891 73.1755 28.891 99.9916C28.891 126.808 50.6624 148.579 77.4786 148.579H122.648C149.464 148.579 171.236 126.808 171.236 99.9916Z" fill="url(#paint0_radial)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M158.977 107.28C158.977 80.0811 132.65 71.9116 100.695 71.9116C64.5672 71.9116 41.159 79.4983 41.159 107.28C41.159 132.536 67.2716 141.093 100.258 141.093C138.413 141.093 158.977 135.644 158.977 107.28Z" fill="url(#paint1_radial)"/>
+    <path d="M75.8 124.527C81.5881 124.527 86.2802 118.069 86.2802 110.103C86.2802 102.137 81.5881 95.6787 75.8 95.6787C70.012 95.6787 65.3198 102.137 65.3198 110.103C65.3198 118.069 70.012 124.527 75.8 124.527Z" fill="#F9F9F9"/>
+    <path d="M126.74 124.747C132.528 124.747 137.22 118.289 137.22 110.323C137.22 102.356 132.528 95.8984 126.74 95.8984C120.952 95.8984 116.26 102.356 116.26 110.323C116.26 118.289 120.952 124.747 126.74 124.747Z" fill="#F9F9F9"/>
+  </g>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(93.6026 101.03) rotate(-0.40466) scale(149.159 170.801)">
+      <stop stop-color="#FCFCFC"/>
+      <stop offset="1" stop-color="#D4D4D4"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(101.232 106.114) rotate(-0.246549) scale(90.3212 53.0581)">
+      <stop stop-color="#2E3748"/>
+      <stop offset="1" stop-color="#030812"/>
+    </radialGradient>
+    <clipPath id="clip0">
+      <rect width="150" height="150" fill="white" transform="translate(25 25)"/>
+    </clipPath>
+  </defs>
+</svg>
