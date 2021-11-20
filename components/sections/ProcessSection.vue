@@ -5,7 +5,7 @@
 <template>
   <base-section>
     <template #left>
-      <div data-aos="zoom-in">
+      <div>
         <base-heading alignment="center" size="lg" class="mb-6 sm:mb-8" tag="h2">
           <span class="flex flex-col">
             <span class="self-center">{{ $t('title.part1') }}</span>
@@ -53,7 +53,6 @@
                 'xl:mr-14': stepIndex % 2 === 1,
               }"
               class="xl:flex xl:flex-col xl:h-full xl:justify-center"
-              data-aos="zoom-in"
             >
               <base-heading
                 :alignment="$mqXl ? (stepIndex % 2 === 0 ? 'left' : 'right') : 'center'"
