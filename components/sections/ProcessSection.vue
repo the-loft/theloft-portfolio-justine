@@ -6,7 +6,7 @@
   <base-section>
     <template #left>
       <div>
-        <base-heading alignment="center" size="lg" class="mb-6 sm:mb-8" tag="h2">
+        <base-heading alignment="center" size="lg" class="xl:mb-8" tag="h2">
           <span class="flex flex-col">
             <span class="self-center">{{ $t('title.part1') }}</span>
 
