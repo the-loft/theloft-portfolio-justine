@@ -15,9 +15,7 @@ export default {
 
   build: {
     babel: {
-      plugins: [
-        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
-      ],
+      plugins: [['@babel/plugin-proposal-private-property-in-object', { loose: true }]],
     },
   },
 
@@ -40,17 +38,15 @@ export default {
 
   // --> MODULES, PLUGINS AND STYLESHEETS <--
 
-  buildModules: [
-    '@nuxtjs/eslint-module',
-
-    '@nuxtjs/stylelint-module',
-
-    '@nuxtjs/tailwindcss',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxtjs/tailwindcss'],
 
   modules: ['@nuxtjs/i18n', '@nuxtjs/pwa'],
 
   plugins: [
+    // --> FOR SERVER AND CLIENT <--
+
+    { src: '@/plugins/global.fontawesome' },
+
     // --> FOR CLIENT ONLY <--
   ],
 
@@ -88,4 +84,12 @@ export default {
       lang: 'en',
     },
   },
+
+  tailwindcss: {
+    cssPath: '~/assets/stylesheets/tailwind.scss',
+    exposeConfig: true,
+    viewer: false,
+  },
+
+  telemetry: false,
 }
