@@ -86,10 +86,9 @@ export default {
     langDir: 'locales/',
     lazy: true,
     seo: false,
-    strategy: 'prefix_except_default',
+    strategy: 'no_prefix',
 
     detectBrowserLanguage: {
-      alwaysRedirect: true,
       fallbackLocale: 'en',
       onlyOnRoot: true,
     },
