@@ -119,11 +119,11 @@
           </base-heading>
         </div>
 
-        <div class="flex flex-wrap justify-center max-w-2xl mx-auto -my-2">
+        <div class="flex flex-wrap justify-center max-w-4xl mx-auto -my-2">
           <img
             v-for="cover in covers"
             :key="cover"
-            :src="require(`~/assets/images/components/sections/IdeasSection/covers/${cover}.svg`)"
+            :src="require(`~/assets/images/components/sections/IdeasSection/covers/${cover}.jpg`)"
             class="flex-initial h-40 m-2 sm:h-64"
           />
         </div>
@@ -172,7 +172,16 @@ export default {
       'power',
     ],
 
-    covers: ['cover-outer', 'cover-inner', 'backcover'],
+    covers: [
+      'cover-outer',
+      'chapter1',
+      'chapter2',
+      'chapter3',
+      'chapter4',
+      'chapter5',
+      'chapter6',
+      'cover-back',
+    ],
 
     powers: [
       'power-bank',
@@ -207,10 +216,10 @@ export default {
       "title": "I can make your landing page stand out from the competition",
       "subtitle": "with animated vector illustrations"
     },
-      "idea2": {
-        "title": "I can design your own mascotte",
-        "subtitle": "to humanize your site"
-      },
+    "idea2": {
+      "title": "I can design your own mascotte",
+      "subtitle": "to humanize your site"
+    },
     "idea3": {
       "title": "I can draw your entire team",
       "subtitle": "in your favorite style"

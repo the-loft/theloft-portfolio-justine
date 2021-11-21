@@ -8,9 +8,4 @@ export default {
   app: {
     url: 'http://127.0.0.1:2000',
   },
-
-  nuxt: {
-    host: '0.0.0.0',
-    port: 2000,
-  },
 }
