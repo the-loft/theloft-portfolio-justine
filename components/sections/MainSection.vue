@@ -57,9 +57,9 @@ export default {}
   },
   "fr": {
     "title": {
-      "part1": "",
-      "part2": "",
-      "part3": ""
+      "part1": "Bonjour, je suis Justine!",
+      "part2": "Je peux améliorer l'identité et l'image de marque",
+      "part3": "de votre SaaS ou eCommerce en 30 jours"
     }
   }
 }
