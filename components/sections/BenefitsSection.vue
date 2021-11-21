@@ -32,7 +32,16 @@
           <slot />
 
           <div
-            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm  min-h-md"
+            class="
+              p-10
+              mb-4
+              text-gray-900
+              bg-white
+              border border-gray-400
+              rounded-md
+              shadow-sm
+              min-h-md
+            "
           >
             <div
               v-for="(benefit, benefitIndex) of benefits"
@@ -137,7 +146,7 @@ export default {
         "value": "Of course! You will always be able to contact me by email or here if you need some details to be adjusted."
       },
       "benefit4": {
-        "title": "We need help to improve the identity of our product. How can we contact you?",
+        "title": "How can we contact you?",
         "value": "You can contact me by hitting the button below or by booking a call with me at the bottom of the page."
       }
     }
@@ -162,7 +171,7 @@ export default {
         "value": "Bien sûr! Vous pourrez toujours me contacter par e-mail ou ici si vous avez besoin d'un ajustement de certains détails."
       },
       "benefit4": {
-        "title": "Nous avons besoin d'aide pour améliorer l'identité de notre produit. Comment pouvons-nous vous contacter?",
+        "title": "Comment pouvons-nous vous contacter?",
         "value": "Vous pouvez me contacter en cliquant sur le bouton ci-dessous ou en réservant un appel avec moi au bas de la page."
       }
     }

@@ -207,17 +207,17 @@ export default {
       "title": "I can make your landing page stand out from the competition",
       "subtitle": "with animated vector illustrations"
     },
-    "idea2": {
-      "title": "I can help you catch people's attention on your social networks",
-      "subtitle": "by designing banners, animated GIFs or videos"
-    },
+      "idea2": {
+        "title": "I can design your own mascotte",
+        "subtitle": "to humanize your site"
+      },
     "idea3": {
-      "title": "I can design your own mascotte",
-      "subtitle": "to humanize your site"
-    },
-    "idea4": {
       "title": "I can draw your entire team",
       "subtitle": "in your favorite style"
+    },
+    "idea4": {
+      "title": "I can help you catch people's attention on your social networks",
+      "subtitle": "by designing banners, animated GIFs or videos"
     },
     "idea5": {
       "title": "I can invent all the elements of your ebook",
@@ -230,16 +230,16 @@ export default {
       "subtitle": "avec des illustrations vectorielles animées"
     },
     "idea2": {
-      "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",
-      "subtitle": "en concevant des bannières, des GIF animés ou des vidéos"
-    },
-    "idea3": {
       "title": "Je peux concevoir votre propre mascotte",
       "subtitle": "pour humaniser votre site"
     },
-    "idea4": {
+    "idea3": {
       "title": "Je peux dessiner toute votre équipe",
       "subtitle": "dans votre style préféré"
+    },
+    "idea4": {
+      "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",
+      "subtitle": "en concevant des bannières, des GIF animés ou des vidéos"
     },
     "idea5": {
       "title": "Je peux inventer tous les éléments visuels de votre ebook",
