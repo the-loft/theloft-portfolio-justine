@@ -82,8 +82,24 @@
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
-            <base-gradient color="green">
+            <base-gradient color="blue">
               {{ $t('idea4.subtitle') }}
+            </base-gradient>
+          </base-heading>
+        </div>
+      </div>
+
+      <!-- IDEA 5 -->
+
+      <div class="mb-20">
+        <div class="mb-10" data-aos="zoom-in">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
+            {{ $t('idea5.title') }}
+          </base-heading>
+
+          <base-heading alignment="center" tag="h4">
+            <base-gradient color="green">
+              {{ $t('idea5.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -104,17 +120,17 @@
         </div>
       </div>
 
-      <!-- IDEA 5 -->
+      <!-- IDEA 6 -->
 
       <div>
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea5.title') }}
+            {{ $t('idea6.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="pink">
-              {{ $t('idea5.subtitle') }}
+              {{ $t('idea6.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -225,10 +241,14 @@ export default {
       "subtitle": "in your favorite style"
     },
     "idea4": {
+      "title": "I can animate your logo",
+      "subtitle": "so you can use it as a spinner"
+    },
+    "idea5": {
       "title": "I can help you catch people's attention on your social networks",
       "subtitle": "by designing banners, animated GIFs or videos"
     },
-    "idea5": {
+    "idea6": {
       "title": "I can invent all the elements of your ebook",
       "subtitle": "to encourage people to download it"
     }
@@ -247,10 +267,14 @@ export default {
       "subtitle": "dans votre style préféré"
     },
     "idea4": {
+      "title": "Je peux animer votre logo",
+      "subtitle": "pour que vous puissiez l'utiliser comme spinner"
+    },
+    "idea5": {
       "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",
       "subtitle": "en concevant des bannières, des GIF animés ou des vidéos"
     },
-    "idea5": {
+    "idea6": {
       "title": "Je peux inventer tous les éléments visuels de votre ebook",
       "subtitle": "pour encourager les gens à le télécharger"
     }
