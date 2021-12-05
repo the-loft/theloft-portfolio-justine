@@ -23,8 +23,8 @@
     <template #right>
       <div class="relative">
         <img
-          :src="require('~/assets/images/landscapes/left-city-japan.svg')"
-          class="absolute top-0 left-0 hidden mt-4 ml-10 h-112 xl:inline-block"
+          :src="require('~/assets/images/landscapes/benefits-left.svg')"
+          class="absolute top-0 left-0 hidden mt-10 ml-20 h-120 xl:inline-block"
           loading="lazy"
         />
 
@@ -32,23 +32,14 @@
           <slot />
 
           <div
-            class="
-              p-10
-              mb-4
-              text-gray-900
-              bg-white
-              border border-gray-400
-              rounded-md
-              shadow-sm
-              min-h-md
-            "
+            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm  min-h-md"
           >
             <div
               v-for="(benefit, benefitIndex) of benefits"
               :key="benefitIndex"
               class="mb-8 -mt-2 last:mb-0"
             >
-              <base-heading class="mb-4 ml-20" size="xs" tag="h3">
+              <base-heading class="mb-4 ml-20 sm:ml-24" size="xs" tag="h3">
                 {{ benefit.title }}
               </base-heading>
 
@@ -77,8 +68,8 @@
         </div>
 
         <img
-          :src="require('~/assets/images/landscapes/right-nature-fishing.svg')"
-          class="absolute top-0 right-0 hidden mt-1 mr-10 h-112 xl:inline-block"
+          :src="require('~/assets/images/landscapes/benefits-right.svg')"
+          class="absolute top-0 right-0 hidden mt-10 mr-20 h-120 xl:inline-block"
           loading="lazy"
         />
       </div>
@@ -96,22 +87,22 @@ export default {
     benefits() {
       return [
         {
-          author: 'justine',
+          author: 'pricing',
           title: this.$t('benefits.benefit1.title'),
           value: this.$t('benefits.benefit1.value'),
         },
         {
-          author: 'justine',
+          author: 'availability',
           title: this.$t('benefits.benefit2.title'),
           value: this.$t('benefits.benefit2.value'),
         },
         {
-          author: 'justine',
+          author: 'updates',
           title: this.$t('benefits.benefit3.title'),
           value: this.$t('benefits.benefit3.value'),
         },
         {
-          author: 'justine',
+          author: 'contact',
           title: this.$t('benefits.benefit4.title'),
           value: this.$t('benefits.benefit4.value'),
         },

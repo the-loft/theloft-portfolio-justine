@@ -20,10 +20,10 @@
 
     <template #right>
       <div class="relative flex justify-center -mt-8 md:-mt-24">
-        <div class="absolute top-0 left-0 hidden mt-40 xl:block">
+        <div class="absolute top-0 hidden left-6 mt-28 xl:block">
           <img
-            :src="require('~/assets/images/landscapes/left-city-kremlin.svg')"
-            class="h-104"
+            :src="require('~/assets/images/landscapes/calendar-left.svg')"
+            class="h-120"
             loading="lazy"
           />
         </div>
@@ -33,10 +33,10 @@
           data-url="https://calendly.com/justine-lecoupanec/30min?hide_landing_page_details=1&hide_gdpr_banner=1"
         ></div>
 
-        <div class="absolute top-0 right-0 hidden mt-40 xl:block">
+        <div class="absolute top-0 hidden right-6 mt-28 xl:block">
           <img
-            :src="require('~/assets/images/landscapes/right-city-bridge.svg')"
-            class="h-104"
+            :src="require('~/assets/images/landscapes/calendar-right.svg')"
+            class="h-120"
             loading="lazy"
           />
         </div>

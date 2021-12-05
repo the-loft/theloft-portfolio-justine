@@ -23,7 +23,7 @@
         'ml-4': reverse,
         'mr-4': !reverse,
       }"
-      class="flex-initial w-12 h-12 sm:w-16 sm:h-16"
+      class="flex-initial w-16 mt-1 sm:w-20"
     />
 
     <div class="flex flex-col flex-1 normal-case">
@@ -48,13 +48,17 @@
 
 <script>
 // Components
-import Justine from '@/assets/images/components/bases/BaseQuote/justine.svg?inline'
-import Lili from '@/assets/images/components/bases/BaseQuote/lili.svg?inline'
+import Availability from '@/assets/images/components/bases/BaseQuote/Availability.svg?inline'
+import Contact from '@/assets/images/components/bases/BaseQuote/Contact.svg?inline'
+import Pricing from '@/assets/images/components/bases/BaseQuote/Pricing.svg?inline'
+import Updates from '@/assets/images/components/bases/BaseQuote/Updates.svg?inline'
 
 export default {
   components: {
-    Justine,
-    Lili,
+    Availability,
+    Contact,
+    Pricing,
+    Updates,
   },
 
   props: {
@@ -62,7 +66,7 @@ export default {
       type: String,
       required: true,
       validator(x) {
-        return ['justine', 'lili'].includes(x)
+        return ['availability', 'contact', 'pricing', 'updates'].includes(x)
       },
     },
     background: {
