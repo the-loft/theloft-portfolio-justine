@@ -6,14 +6,24 @@
   <base-section>
     <template #left>
       <div>
-        <base-heading alignment="center" size="lg" tag="h1" class="mb-6 sm:mb-8">
+        <img
+          :src="require('~/assets/images/components/sections/MainSection/MainBackground.svg')"
+          class="w-full -mt-12 rounded-lg"
+        />
+
+        <base-heading
+          alignment="center"
+          size="lg"
+          tag="h1"
+          class="max-w-3xl mx-auto mb-6 -mt-5 sm:-mt-8 sm:mb-8 lg:-mt-20 xl:-mt-28"
+        >
           <span class="flex flex-col">
             <span class="self-center mb-3">{{ $t('title.part1') }}</span>
 
-            <base-gradient class="self-center" color="teal">
-              <div class="mb-2">{{ $t('title.part2') }}</div>
+            <base-gradient class="self-center leading-24" color="teal">
+              <div class="inline">{{ $t('title.part2') }}</div>
 
-              <div>{{ $t('title.part3') }}</div>
+              <div class="inline">{{ $t('title.part3') }}</div>
             </base-gradient>
           </span>
         </base-heading>
