@@ -28,10 +28,32 @@ export default {
   head: {
     title: "Justine's Portfolio",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      {
+        charset: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: '',
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/og-image.jpg',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/og-image.jpg',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
