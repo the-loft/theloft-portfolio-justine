@@ -7,7 +7,7 @@
     <template #right>
       <!-- IDEA 1 -->
 
-      <div class="mb-20">
+      <!-- <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea1.title') }}
@@ -19,7 +19,7 @@
             </base-gradient>
           </base-heading>
         </div>
-      </div>
+      </div> -->
 
       <!-- IDEA 2 -->
 

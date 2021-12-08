@@ -12,9 +12,9 @@
 
     <base-divider class="my-10 sm:my-16" />
 
-    <process-section class="-mt-2" />
+    <!-- <process-section class="-mt-2" />
 
-    <base-divider class="my-10 sm:my-16" />
+    <base-divider class="my-10 sm:my-16" /> -->
 
     <benefits-section class="-mt-2" />
 
