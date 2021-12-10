@@ -49,9 +49,9 @@
 <script>
 // Components
 import Availability from '@/assets/images/components/bases/BaseQuote/Availability.svg?inline'
-import Contact from '@/assets/images/components/bases/BaseQuote/Contact.svg?inline'
-import Pricing from '@/assets/images/components/bases/BaseQuote/Pricing.svg?inline'
-import Updates from '@/assets/images/components/bases/BaseQuote/Updates.svg?inline'
+import Contact from '@/assets/images/components/bases/BaseQuote/contact.svg?inline'
+import Pricing from '@/assets/images/components/bases/BaseQuote/pricing.svg?inline'
+import Updates from '@/assets/images/components/bases/BaseQuote/updates.svg?inline'
 
 export default {
   components: {
