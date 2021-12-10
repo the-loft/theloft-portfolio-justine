@@ -75,7 +75,7 @@
 
       <!-- IDEA 4 -->
 
-      <div class="mb-20">
+      <!-- <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea4.title') }}
@@ -87,7 +87,7 @@
             </base-gradient>
           </base-heading>
         </div>
-      </div>
+      </div> -->
 
       <!-- IDEA 5 -->
 
@@ -108,7 +108,17 @@
           <div
             v-for="banner in banners"
             :key="banner"
-            class="flex-initial p-3 mb-3 overflow-hidden bg-white border shadow-sm  last:mb-0 rounded-xl"
+            class="
+              flex-initial
+              p-3
+              mb-3
+              overflow-hidden
+              bg-white
+              border
+              shadow-sm
+              last:mb-0
+              rounded-xl
+            "
           >
             <img
               :src="
