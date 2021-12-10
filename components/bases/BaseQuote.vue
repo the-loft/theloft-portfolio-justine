@@ -48,7 +48,7 @@
 
 <script>
 // Components
-import Availability from '@/assets/images/components/bases/BaseQuote/Availability.svg?inline'
+import Availability from '@/assets/images/components/bases/BaseQuote/availability.svg?inline'
 import Contact from '@/assets/images/components/bases/BaseQuote/contact.svg?inline'
 import Pricing from '@/assets/images/components/bases/BaseQuote/pricing.svg?inline'
 import Updates from '@/assets/images/components/bases/BaseQuote/updates.svg?inline'
