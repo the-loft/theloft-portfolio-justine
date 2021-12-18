@@ -6,10 +6,7 @@
   <base-section>
     <template #left>
       <div>
-        <img
-          :src="require('~/assets/images/components/sections/MainSection/MainBackground.svg')"
-          class="w-full -mt-12 rounded-lg"
-        />
+        <MainBackground class="w-full -mt-12 rounded-lg" />
 
         <base-heading
           alignment="center"
@@ -49,7 +46,14 @@
      ************************************************************************* -->
 
 <script>
-export default {}
+// Components
+import MainBackground from '@/assets/images/components/sections/MainSection/MainBackground.svg?inline'
+
+export default {
+  components: {
+    MainBackground,
+  },
+}
 </script>
 
 <!-- *************************************************************************
