@@ -104,7 +104,7 @@ export default {
 
   i18n: {
     baseUrl: config.app.url,
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
     langDir: 'locales/',
     lazy: true,
     strategy: 'prefix_except_default',
