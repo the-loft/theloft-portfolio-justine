@@ -75,7 +75,7 @@
 
       <!-- IDEA 4 -->
 
-      <!-- <div class="mb-20">
+      <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('idea4.title') }}
@@ -87,7 +87,19 @@
             </base-gradient>
           </base-heading>
         </div>
-      </div> -->
+
+        <div class="flex flex-wrap items-center justify-center">
+          <img
+            v-for="spinner in spinners"
+            :key="spinner"
+            :alt="`${spinner}'s loading image`"
+            :src="
+              require(`~/assets/images/components/sections/IdeasSection/spinners/${spinner}.gif`)
+            "
+            class="w-24 mx-3 border shadow-sm sm:mx-4 rounded-3xl sm:w-32"
+          />
+        </div>
+      </div>
 
       <!-- IDEA 5 -->
 
@@ -108,17 +120,7 @@
           <div
             v-for="banner in banners"
             :key="banner"
-            class="
-              flex-initial
-              p-3
-              mb-3
-              overflow-hidden
-              bg-white
-              border
-              shadow-sm
-              last:mb-0
-              rounded-xl
-            "
+            class="flex-initial p-3 mb-3 overflow-hidden bg-white border shadow-sm  last:mb-0 rounded-xl"
           >
             <img
               :src="
@@ -227,6 +229,8 @@ export default {
       'power-writer',
       'power-computer-coffee',
     ],
+
+    spinners: ['prospectwith', 'resilienceclub'],
   }),
 }
 </script>
@@ -252,7 +256,7 @@ export default {
     },
     "idea4": {
       "title": "I can animate your logo",
-      "subtitle": "so you can use it as a spinner"
+      "subtitle": "so you can use it as a loading element"
     },
     "idea5": {
       "title": "I can help you catch people's attention on your social networks",
@@ -278,7 +282,7 @@ export default {
     },
     "idea4": {
       "title": "Je peux animer votre logo",
-      "subtitle": "pour que vous puissiez l'utiliser comme spinner"
+      "subtitle": "pour que vous puissiez l'utiliser comme un élément de chargement"
     },
     "idea5": {
       "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",

@@ -107,12 +107,11 @@ export default {
     defaultLocale: 'en',
     langDir: 'locales/',
     lazy: true,
-    seo: false,
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
 
     detectBrowserLanguage: {
+      useCookie: true,
       fallbackLocale: 'en',
-      onlyOnRoot: true,
     },
 
     locales: [
