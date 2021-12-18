@@ -26,7 +26,7 @@ export default {
   // --> TAGS & METATAGS <--
 
   head: {
-    title: "Justine's Portfolio",
+    title: 'Justine Le Coupanec | Portfolio',
     meta: [
       {
         charset: 'utf-8',
