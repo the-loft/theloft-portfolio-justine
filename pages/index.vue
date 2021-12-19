@@ -6,7 +6,7 @@
   <div>
     <main-section />
 
-    <base-divider class="my-10 sm:my-16" />
+    <base-divider class="mb-10 sm:mt-4 sm:mb-16" />
 
     <ideas-section class="-mt-2" />
 
