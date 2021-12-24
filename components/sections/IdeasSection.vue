@@ -7,31 +7,31 @@
     <template #right>
       <!-- IDEA 1 -->
 
-      <!-- <div class="mb-20">
+      <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea1.title') }}
+            {{ $t('landing.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="pink">
-              {{ $t('idea1.subtitle') }}
+              {{ $t('landing.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
-      </div> -->
+      </div>
 
       <!-- IDEA 2 -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea2.title') }}
+            {{ $t('mascotte.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="orange">
-              {{ $t('idea2.subtitle') }}
+              {{ $t('mascotte.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -51,12 +51,12 @@
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea3.title') }}
+            {{ $t('team.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="blue">
-              {{ $t('idea3.subtitle') }}
+              {{ $t('team.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -78,12 +78,12 @@
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea4.title') }}
+            {{ $t('logo.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="blue">
-              {{ $t('idea4.subtitle') }}
+              {{ $t('logo.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -106,12 +106,12 @@
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea5.title') }}
+            {{ $t('socialNetworks.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="green">
-              {{ $t('idea5.subtitle') }}
+              {{ $t('socialNetworks.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -137,12 +137,12 @@
       <div>
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('idea6.title') }}
+            {{ $t('ebook.title') }}
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
             <base-gradient color="pink">
-              {{ $t('idea6.subtitle') }}
+              {{ $t('ebook.subtitle') }}
             </base-gradient>
           </base-heading>
         </div>
@@ -242,53 +242,53 @@ export default {
 <i18n lang="json">
 {
   "en": {
-    "idea1": {
+    "landing": {
       "title": "I can make your landing page stand out from the competition",
       "subtitle": "with animated vector illustrations"
     },
-    "idea2": {
+    "mascotte": {
       "title": "I can design your own mascotte",
       "subtitle": "to humanize your site"
     },
-    "idea3": {
+    "team": {
       "title": "I can draw your entire team",
       "subtitle": "in your favorite style"
     },
-    "idea4": {
+    "logo": {
       "title": "I can animate your logo",
       "subtitle": "so you can use it as a loading element"
     },
-    "idea5": {
+    "socialNetworks": {
       "title": "I can help you catch people's attention on your social networks",
       "subtitle": "by designing banners, animated GIFs or videos"
     },
-    "idea6": {
+    "ebook": {
       "title": "I can invent all the elements of your ebook",
       "subtitle": "to encourage people to download it"
     }
   },
   "fr": {
-    "idea1": {
+    "landing": {
       "title": "Je peux travailler à embellir votre homepage pour vous démarquer de la concurrence",
       "subtitle": "avec des illustrations vectorielles animées"
     },
-    "idea2": {
+    "mascotte": {
       "title": "Je peux concevoir votre propre mascotte",
       "subtitle": "pour humaniser votre site"
     },
-    "idea3": {
+    "team": {
       "title": "Je peux dessiner toute votre équipe",
       "subtitle": "dans votre style préféré"
     },
-    "idea4": {
+    "logo": {
       "title": "Je peux animer votre logo",
-      "subtitle": "pour que vous puissiez l'utiliser comme un élément de chargement"
+      "subtitle": "pour que vous puissiez l'utiliser comme élément de chargement"
     },
-    "idea5": {
+    "socialNetworks": {
       "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",
       "subtitle": "en concevant des bannières, des GIF animés ou des vidéos"
     },
-    "idea6": {
+    "ebook": {
       "title": "Je peux inventer tous les éléments visuels de votre ebook",
       "subtitle": "pour encourager les gens à le télécharger"
     }
