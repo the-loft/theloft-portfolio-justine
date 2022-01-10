@@ -19,9 +19,44 @@
             </base-gradient>
           </base-heading>
         </div>
+        <div class="flex flex-wrap items-center justify-center">
+          <img
+            v-for="landingPage in landingPages"
+            :key="landingPage"
+            :alt="`${landingPage}'s loading image`"
+            :src="
+              require(`~/assets/images/components/sections/IdeasSection/landingPages/${landingPage}.gif`)
+            "
+            class="flex-initial h-40 m-5 sm:h-64"
+          />
+        </div>
       </div>
 
       <!-- IDEA 2 -->
+      <div class="mb-20">
+        <div class="mb-10" data-aos="zoom-in">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
+            {{ $t('createLogo.title') }}
+          </base-heading>
+
+          <base-heading alignment="center" tag="h4">
+            <base-gradient color="orange">
+              {{ $t('createLogo.subtitle') }}
+            </base-gradient>
+          </base-heading>
+        </div>
+
+        <div class="flex flex-wrap justify-center max-w-4xl mx-auto -my-4">
+          <img
+            v-for="logo in logos"
+            :key="logo"
+            :src="require(`~/assets/images/components/sections/IdeasSection/logos/${logo}.svg`)"
+            class="flex-initial h-20 m-10 md:h-24"
+          />
+        </div>
+      </div>
+
+      <!-- IDEA 3 -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -46,7 +81,7 @@
         </div>
       </div>
 
-      <!-- IDEA 3 -->
+      <!-- IDEA 4 -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -73,7 +108,7 @@
         </div>
       </div>
 
-      <!-- IDEA 4 -->
+      <!-- IDEA 5 -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -101,7 +136,7 @@
         </div>
       </div>
 
-      <!-- IDEA 5 -->
+      <!-- IDEA 6 -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -120,7 +155,17 @@
           <div
             v-for="banner in banners"
             :key="banner"
-            class="flex-initial p-3 mb-3 overflow-hidden bg-white border shadow-sm  last:mb-0 rounded-xl"
+            class="
+              flex-initial
+              p-3
+              mb-3
+              overflow-hidden
+              bg-white
+              border
+              shadow-sm
+              last:mb-0
+              rounded-xl
+            "
           >
             <img
               :src="
@@ -130,9 +175,41 @@
             />
           </div>
         </div>
+
+        <base-heading alignment="center" tag="h4">
+          <base-gradient color="green">
+            {{ $t('socialNetworks.subtitle2') }}
+          </base-gradient>
+        </base-heading>
+
+        <div class="flex flex-wrap items-center justify-center">
+          <img
+            v-for="gif in gifs"
+            :key="gif"
+            :alt="`${gif}'s loading image`"
+            :src="require(`~/assets/images/components/sections/IdeasSection/gifs/${gif}.gif`)"
+            class="flex-initial h-40 m-5 sm:h-64"
+          />
+        </div>
       </div>
 
-      <!-- IDEA 6 -->
+      <!-- IDEA 7 -->
+
+      <div class="mb-20">
+        <div class="mb-10" data-aos="zoom-in">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
+            {{ $t('3D.title') }}
+          </base-heading>
+
+          <base-heading alignment="center" tag="h4">
+            <base-gradient color="blue">
+              {{ $t('3D.subtitle') }}
+            </base-gradient>
+          </base-heading>
+        </div>
+      </div>
+
+      <!-- IDEA 8 -->
 
       <div>
         <div class="mb-10" data-aos="zoom-in">
@@ -169,7 +246,9 @@ export default {
   data: () => ({
     // --> STATE <--
 
+    landingPages: [],
     banners: ['prospectwith', 'resilienceclub'],
+    gifs: ['enveloppe', 'robotVille', 'main'],
 
     characters: [
       'alex',
@@ -229,8 +308,9 @@ export default {
       'power-writer',
       'power-computer-coffee',
     ],
+    logos: ['logo-ECPC', 'logo-EGC', 'logo-interagro'],
 
-    spinners: ['prospectwith', 'resilienceclub'],
+    spinners: ['prospectwith', 'resilienceclub', 'writefast'],
   }),
 }
 </script>
@@ -246,6 +326,10 @@ export default {
       "title": "I can make your landing page stand out from the competition",
       "subtitle": "with animated vector illustrations"
     },
+    "createLogo": {
+      "title": "I can design your logo",
+      "subtitle": "to develop your brand image"
+    },
     "mascotte": {
       "title": "I can design your own mascotte",
       "subtitle": "to humanize your site"
@@ -260,7 +344,12 @@ export default {
     },
     "socialNetworks": {
       "title": "I can help you catch people's attention on your social networks",
-      "subtitle": "by designing banners, animated GIFs or videos"
+      "subtitle": "by designing banners",
+      "subtitle2": "GIFs or videos"
+    },
+    "3D": {
+      "title": "I can model 3D objects",
+      "subtitle": "and create 3D videos"
     },
     "ebook": {
       "title": "I can invent all the elements of your ebook",
@@ -271,6 +360,10 @@ export default {
     "landing": {
       "title": "Je peux travailler à embellir votre homepage pour vous démarquer de la concurrence",
       "subtitle": "avec des illustrations vectorielles animées"
+    },
+    "createLogo": {
+      "title": "Je peux concevoir ou modifier votre logo",
+      "subtitle": "pour développer votre image de marque"
     },
     "mascotte": {
       "title": "Je peux concevoir votre propre mascotte",
@@ -286,7 +379,12 @@ export default {
     },
     "socialNetworks": {
       "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",
-      "subtitle": "en concevant des bannières, des GIF animés ou des vidéos"
+      "subtitle": "en concevant des bannières",
+      "subtitle2": "des GIFs animés ou des vidéos"
+    },
+    "3D": {
+      "title": "Je peux modéliser des objets 3D",
+      "subtitle": "et créer des vidéos 3D"
     },
     "ebook": {
       "title": "Je peux inventer tous les éléments visuels de votre ebook",
