@@ -27,7 +27,7 @@
             :src="
               require(`~/assets/images/components/sections/IdeasSection/landingPages/${landingPage}.gif`)
             "
-            class="flex-initial h-40 m-5 sm:h-64"
+            class="flex-initial"
           />
         </div>
       </div>
@@ -246,7 +246,7 @@ export default {
   data: () => ({
     // --> STATE <--
 
-    landingPages: [],
+    landingPages: ['resilienceclub'],
     banners: ['prospectwith', 'resilienceclub'],
     gifs: ['enveloppe', 'robotVille', 'main'],
 
