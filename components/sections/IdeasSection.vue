@@ -14,7 +14,7 @@
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
-            <base-gradient color="pink">
+            <base-gradient color="blue">
               {{ $t('landing.subtitle') }}
             </base-gradient>
           </base-heading>
@@ -40,7 +40,7 @@
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
-            <base-gradient color="orange">
+            <base-gradient color="blue">
               {{ $t('createLogo.subtitle') }}
             </base-gradient>
           </base-heading>
@@ -65,7 +65,7 @@
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
-            <base-gradient color="orange">
+            <base-gradient color="blue">
               {{ $t('mascotte.subtitle') }}
             </base-gradient>
           </base-heading>
@@ -145,7 +145,7 @@
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
-            <base-gradient color="green">
+            <base-gradient color="blue">
               {{ $t('socialNetworks.subtitle') }}
             </base-gradient>
           </base-heading>
@@ -177,7 +177,7 @@
         </div>
 
         <base-heading alignment="center" tag="h4">
-          <base-gradient color="green">
+          <base-gradient color="blue">
             {{ $t('socialNetworks.subtitle2') }}
           </base-gradient>
         </base-heading>
@@ -218,7 +218,7 @@
           </base-heading>
 
           <base-heading alignment="center" tag="h4">
-            <base-gradient color="pink">
+            <base-gradient color="blue">
               {{ $t('ebook.subtitle') }}
             </base-gradient>
           </base-heading>
@@ -348,8 +348,8 @@ export default {
       "subtitle2": "GIFs or videos"
     },
     "3D": {
-      "title": "I can model 3D objects",
-      "subtitle": "and create 3D videos"
+      "title": "I can model 3D objects and animate them",
+      "subtitle": "for videos and websites"
     },
     "ebook": {
       "title": "I can invent all the elements of your ebook",
@@ -383,8 +383,8 @@ export default {
       "subtitle2": "des GIFs animés ou des vidéos"
     },
     "3D": {
-      "title": "Je peux modéliser des objets 3D",
-      "subtitle": "et créer des vidéos 3D"
+      "title": "Je peux modéliser des objets 3D et les animer",
+      "subtitle": "pour des vidéos et des sites web"
     },
     "ebook": {
       "title": "Je peux inventer tous les éléments visuels de votre ebook",

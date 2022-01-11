@@ -12,7 +12,7 @@
               {{ $t('title.part1') }}
             </span>
 
-            <base-gradient class="self-center" color="pink">
+            <base-gradient class="self-center" color="green">
               {{ $t('title.part2') }}
             </base-gradient>
           </span>
@@ -32,7 +32,16 @@
           <slot />
 
           <div
-            class="p-10 mb-4 text-gray-900 bg-white border border-gray-400 rounded-md shadow-sm  min-h-md"
+            class="
+              p-10
+              mb-4
+              text-gray-900
+              bg-white
+              border border-gray-400
+              rounded-md
+              shadow-sm
+              min-h-md
+            "
           >
             <div
               v-for="(benefit, benefitIndex) of benefits"
