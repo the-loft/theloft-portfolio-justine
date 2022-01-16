@@ -269,7 +269,7 @@ export default {
   },
   "fr": {
     "landing": {
-      "title": "Je peux travailler à embellir votre homepage pour vous démarquer de la concurrence",
+      "title": "Je peux embellir votre homepage pour vous démarquer de la concurrence",
       "subtitle": "avec des illustrations vectorielles animées"
     },
     "mascotte": {
