@@ -8,7 +8,7 @@
       <!-- IDEA: LANDING -->
 
       <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('landing.title') }}
           </base-heading>
@@ -30,7 +30,7 @@
       <!-- IDEA: MASCOTTE -->
 
       <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('mascotte.title') }}
           </base-heading>
@@ -55,7 +55,7 @@
       <!-- IDEA: TEAM -->
 
       <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('team.title') }}
           </base-heading>
@@ -82,7 +82,7 @@
       <!-- IDEA: SOCIAL NETWORKS -->
 
       <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('socialNetworks.title') }}
           </base-heading>
@@ -113,7 +113,7 @@
       <!-- IDEA: GIFS -->
 
       <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('gifs.title') }}
           </base-heading>
@@ -139,7 +139,7 @@
       <!-- IDEA: 3D -->
 
       <!-- <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('3D.title') }}
           </base-heading>
@@ -155,7 +155,7 @@
       <!-- IDEA: SPINNERS -->
 
       <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('spinners.title') }}
           </base-heading>
@@ -210,7 +210,7 @@
       <!-- IDEA: EBOOK -->
 
       <div>
-        <div class="mb-10" data-aos="zoom-in">
+        <div class="mb-12" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('ebook.title') }}
           </base-heading>
