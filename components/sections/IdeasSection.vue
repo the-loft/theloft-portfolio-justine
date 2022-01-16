@@ -19,20 +19,16 @@
             </base-gradient>
           </base-heading>
         </div>
-        <div class="flex flex-wrap items-center justify-center">
-          <img
-            v-for="landingPage in landingPages"
-            :key="landingPage"
-            :alt="`${landingPage}'s loading image`"
-            :src="
-              require(`~/assets/images/components/sections/IdeasSection/landingPages/${landingPage}.gif`)
-            "
-            class="flex-initial"
-          />
+
+        <div class="grid justify-center max-w-4xl grid-cols-1 gap-10 mx-auto sm:grid-cols-2">
+          <habits-animation />
+
+          <tasks-animation />
         </div>
       </div>
 
       <!-- IDEA 2 -->
+
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
@@ -155,17 +151,7 @@
           <div
             v-for="banner in banners"
             :key="banner"
-            class="
-              flex-initial
-              p-3
-              mb-3
-              overflow-hidden
-              bg-white
-              border
-              shadow-sm
-              last:mb-0
-              rounded-xl
-            "
+            class="flex-initial p-3 mb-3 overflow-hidden bg-white border shadow-sm  last:mb-0 rounded-xl"
           >
             <img
               :src="
@@ -358,7 +344,7 @@ export default {
   },
   "fr": {
     "landing": {
-      "title": "Je peux embellir votre homepage pour vous démarquer de la concurrence",
+      "title": "Je peux embellir votre homepage",
       "subtitle": "avec des illustrations vectorielles animées"
     },
     "createLogo": {

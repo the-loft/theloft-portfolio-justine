@@ -19,7 +19,7 @@ export default {
     },
   },
 
-  components: ['~/components/bases', '~/components/sections'],
+  components: ['~/components/animations', '~/components/bases', '~/components/sections'],
 
   target: 'static',
 
