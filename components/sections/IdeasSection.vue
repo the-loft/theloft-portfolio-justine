@@ -5,7 +5,7 @@
 <template>
   <base-section>
     <template #right>
-      <!-- IDEA 1 -->
+      <!-- IDEA: LANDING -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -27,32 +27,7 @@
         </div>
       </div>
 
-      <!-- IDEA 2 -->
-
-      <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('createLogo.title') }}
-          </base-heading>
-
-          <base-heading alignment="center" tag="h4">
-            <base-gradient color="blue">
-              {{ $t('createLogo.subtitle') }}
-            </base-gradient>
-          </base-heading>
-        </div>
-
-        <div class="flex flex-wrap justify-center max-w-4xl mx-auto -my-4">
-          <img
-            v-for="logo in logos"
-            :key="logo"
-            :src="require(`~/assets/images/components/sections/IdeasSection/logos/${logo}.svg`)"
-            class="flex-initial h-20 m-10 md:h-24"
-          />
-        </div>
-      </div>
-
-      <!-- IDEA 3 -->
+      <!-- IDEA: MASCOTTE -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -67,7 +42,7 @@
           </base-heading>
         </div>
 
-        <div class="flex flex-wrap justify-center max-w-4xl mx-auto -my-4">
+        <div class="flex flex-wrap justify-center max-w-4xl mx-auto">
           <img
             v-for="power in powers"
             :key="power"
@@ -77,7 +52,7 @@
         </div>
       </div>
 
-      <!-- IDEA 4 -->
+      <!-- IDEA: TEAM -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -104,35 +79,7 @@
         </div>
       </div>
 
-      <!-- IDEA 5 -->
-
-      <div class="mb-20">
-        <div class="mb-10" data-aos="zoom-in">
-          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
-            {{ $t('logo.title') }}
-          </base-heading>
-
-          <base-heading alignment="center" tag="h4">
-            <base-gradient color="blue">
-              {{ $t('logo.subtitle') }}
-            </base-gradient>
-          </base-heading>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center">
-          <img
-            v-for="spinner in spinners"
-            :key="spinner"
-            :alt="`${spinner}'s loading image`"
-            :src="
-              require(`~/assets/images/components/sections/IdeasSection/spinners/${spinner}.gif`)
-            "
-            class="w-24 mx-3 border shadow-sm sm:mx-4 rounded-3xl sm:w-32"
-          />
-        </div>
-      </div>
-
-      <!-- IDEA 6 -->
+      <!-- IDEA: SOCIAL NETWORKS -->
 
       <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
@@ -161,27 +108,37 @@
             />
           </div>
         </div>
+      </div>
 
-        <base-heading alignment="center" tag="h4">
-          <base-gradient color="blue">
-            {{ $t('socialNetworks.subtitle2') }}
-          </base-gradient>
-        </base-heading>
+      <!-- IDEA: GIFS -->
 
-        <div class="flex flex-wrap items-center justify-center">
+      <div class="mb-20">
+        <div class="mb-10" data-aos="zoom-in">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
+            {{ $t('gifs.title') }}
+          </base-heading>
+
+          <base-heading alignment="center" tag="h4">
+            <base-gradient color="blue">
+              {{ $t('gifs.subtitle') }}
+            </base-gradient>
+          </base-heading>
+        </div>
+
+        <div class="grid justify-center max-w-3xl grid-cols-1 gap-6 mx-auto sm:grid-cols-3">
           <img
             v-for="gif in gifs"
             :key="gif"
             :alt="`${gif}'s loading image`"
             :src="require(`~/assets/images/components/sections/IdeasSection/gifs/${gif}.gif`)"
-            class="flex-initial h-40 m-5 sm:h-64"
+            class="h-48 mx-auto md:h-56"
           />
         </div>
       </div>
 
-      <!-- IDEA 7 -->
+      <!-- IDEA: 3D -->
 
-      <div class="mb-20">
+      <!-- <div class="mb-20">
         <div class="mb-10" data-aos="zoom-in">
           <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
             {{ $t('3D.title') }}
@@ -193,9 +150,64 @@
             </base-gradient>
           </base-heading>
         </div>
+      </div> -->
+
+      <!-- IDEA: SPINNERS -->
+
+      <div class="mb-20">
+        <div class="mb-10" data-aos="zoom-in">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
+            {{ $t('spinners.title') }}
+          </base-heading>
+
+          <base-heading alignment="center" tag="h4">
+            <base-gradient color="blue">
+              {{ $t('spinners.subtitle') }}
+            </base-gradient>
+          </base-heading>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center">
+          <img
+            v-for="spinner in spinners"
+            :key="spinner"
+            :alt="`${spinner}'s loading image`"
+            :src="
+              require(`~/assets/images/components/sections/IdeasSection/spinners/${spinner}.gif`)
+            "
+            class="w-24 mx-3 border shadow-sm sm:mx-4 rounded-3xl sm:w-32"
+          />
+        </div>
       </div>
 
-      <!-- IDEA 8 -->
+      <!-- IDEA: LOGOS -->
+
+      <div class="mb-20">
+        <div class="mb-12" data-aos="zoom-in">
+          <base-heading alignment="center" class="mb-1 xl:-mt-4" tag="h2">
+            {{ $t('logos.title') }}
+          </base-heading>
+
+          <base-heading alignment="center" tag="h4">
+            <base-gradient color="blue">
+              {{ $t('logos.subtitle') }}
+            </base-gradient>
+          </base-heading>
+        </div>
+
+        <div
+          class="grid justify-center max-w-4xl grid-cols-1 gap-10 mx-auto md:grid-cols-3 md:gap-12"
+        >
+          <img
+            v-for="logo in logos"
+            :key="logo"
+            :src="require(`~/assets/images/components/sections/IdeasSection/logos/${logo}.svg`)"
+            class="h-16 mx-auto md:h-24"
+          />
+        </div>
+      </div>
+
+      <!-- IDEA: EBOOK -->
 
       <div>
         <div class="mb-10" data-aos="zoom-in">
@@ -312,7 +324,7 @@ export default {
       "title": "I can make your landing page stand out from the competition",
       "subtitle": "with animated vector illustrations"
     },
-    "createLogo": {
+    "logos": {
       "title": "I can design your logo",
       "subtitle": "to develop your brand image"
     },
@@ -324,18 +336,21 @@ export default {
       "title": "I can draw your entire team",
       "subtitle": "in your favorite style"
     },
-    "logo": {
+    "spinners": {
       "title": "I can animate your logo",
       "subtitle": "so you can use it as a loading element"
     },
     "socialNetworks": {
       "title": "I can help you catch people's attention on your social networks",
-      "subtitle": "by designing banners",
-      "subtitle2": "GIFs or videos"
+      "subtitle": "by designing banners"
     },
     "3D": {
       "title": "I can model 3D objects and animate them",
       "subtitle": "for videos and websites"
+    },
+    "gifs": {
+      "title": "I can make animated badges",
+      "subtitle": "to bring your app to life"
     },
     "ebook": {
       "title": "I can invent all the elements of your ebook",
@@ -347,7 +362,7 @@ export default {
       "title": "Je peux embellir votre homepage",
       "subtitle": "avec des illustrations vectorielles animées"
     },
-    "createLogo": {
+    "logos": {
       "title": "Je peux concevoir ou modifier votre logo",
       "subtitle": "pour développer votre image de marque"
     },
@@ -359,18 +374,21 @@ export default {
       "title": "Je peux dessiner toute votre équipe",
       "subtitle": "dans votre style préféré"
     },
-    "logo": {
+    "spinners": {
       "title": "Je peux animer votre logo",
       "subtitle": "pour que vous puissiez l'utiliser comme élément de chargement"
     },
     "socialNetworks": {
       "title": "Je peux vous aider à attirer l'attention sur vos réseaux sociaux",
-      "subtitle": "en concevant des bannières",
-      "subtitle2": "des GIFs animés ou des vidéos"
+      "subtitle": "en concevant des bannières"
     },
     "3D": {
       "title": "Je peux modéliser des objets 3D et les animer",
       "subtitle": "pour des vidéos et des sites web"
+    },
+    "gifs": {
+      "title": "Je peux réaliser des badges animés",
+      "subtitle": "pour donner vie à votre application"
     },
     "ebook": {
       "title": "Je peux inventer tous les éléments visuels de votre ebook",

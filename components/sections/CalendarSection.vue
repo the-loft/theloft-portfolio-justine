@@ -20,7 +20,7 @@
 
     <template #right>
       <div class="relative flex justify-center -mt-8 md:-mt-24">
-        <div class="absolute top-0 hidden left-6 mt-28 xl:block">
+        <div class="absolute top-0 hidden mt-24 left-6 xl:block">
           <img
             :src="require('~/assets/images/landscapes/calendar-left.svg')"
             class="h-120"
@@ -33,7 +33,7 @@
           data-url="https://calendly.com/justine-lecoupanec/30min?hide_landing_page_details=1&hide_gdpr_banner=1"
         ></div>
 
-        <div class="absolute top-0 hidden right-6 mt-28 xl:block">
+        <div class="absolute top-0 hidden mt-24 right-6 xl:block">
           <img
             :src="require('~/assets/images/landscapes/calendar-right.svg')"
             class="h-120"
@@ -91,11 +91,11 @@ $c: '.calendly-widget';
   height: 600px;
 
   @include mq($from: md) {
-    height: 970px;
+    height: 1000px;
   }
 
   @include mq($from: xl) {
-    height: 670px;
+    height: 690px;
   }
 }
 </style>
