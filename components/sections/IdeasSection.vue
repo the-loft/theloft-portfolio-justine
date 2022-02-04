@@ -308,7 +308,7 @@ export default {
     ],
     logos: ['logo-ECPC', 'logo-EGC', 'logo-interagro'],
 
-    spinners: ['prospectwith', 'resilienceclub', 'writefast'],
+    spinners: ['prospectwith', 'resilienceclub'],
   }),
 }
 </script>
