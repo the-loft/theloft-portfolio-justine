@@ -41,7 +41,9 @@
             <a v-for="trophy in trophies" :key="trophy.name" :href="trophy.href" target="_blank">
               <img
                 :alt="trophy.name"
-                :src="require(`~/assets/images/components/sections/MainSection/${trophy.name}.svg`)"
+                :src="
+                  require(`~/assets/images/components/sections/MainSection/logo-${trophy.name}.svg`)
+                "
                 class="h-10 m-4"
               />
             </a>
@@ -76,6 +78,18 @@ export default {
       {
         name: 'resilienceclub',
         href: 'https://www.resilience.club/',
+      },
+      {
+        name: 'crowdsec',
+        href: 'https://crowdsec.net/',
+      },
+      {
+        name: 'uplaw',
+        href: 'https://up.law/',
+      },
+      {
+        name: 'mashupweb',
+        href: 'https://www.mashup-web.com/',
       },
     ],
   }),
