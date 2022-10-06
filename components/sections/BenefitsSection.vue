@@ -135,7 +135,7 @@ export default {
     "benefits": {
       "benefit1": {
         "title": "How much do you charge?",
-        "value": "I charge 200€ per day. To make sure there is no surprise for both of us, we define your needs before working together, and we figure out how much time it will take."
+        "value": "I charge 300€ per day. To make sure there is no surprise for both of us, we define your needs before working together, and we figure out how much time it will take."
       },
       "benefit2": {
         "title": "Are you available right now?",
@@ -160,7 +160,7 @@ export default {
     "benefits": {
       "benefit1": {
         "title": "Quels sont vos tarifs ?",
-        "value": "Je facture 200€ par jour. Pour être sûr qu'il n'y ait pas de surprise, nous définissons vos besoins avant de travailler ensemble et nous déterminons le temps que cela prendra."
+        "value": "Je facture 300€ par jour. Pour être sûr qu'il n'y ait pas de surprise, nous définissons vos besoins avant de travailler ensemble et nous déterminons le temps que cela prendra."
       },
       "benefit2": {
         "title": "Êtes-vous disponible en ce moment ?",
